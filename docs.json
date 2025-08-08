@@ -59,16 +59,26 @@
           },
           {
             "group": "Pour les propriétaires et gestionnaires",
-            "pages": [
+            "pages": [  
+              "guides/customers/informations"
               {
                 "group": "Solde",
                 "pages": [
-                  "guides/owner/products/create",
-                  "guides/owner/products/data"
+                  "guides/owner/balance/view",
+                  "guides/owner/balance/transfer"
                 ]
               },
-              "guides/owner/balance/view",
-              "guides/owner/balance/transfer"
+              {
+                "group": "Gestion des cautions",
+                "pages": [
+                  "guides/deposit/how-to",
+                  "guides/deposit/submit",              
+                  "guides/deposit/capture",
+                  "guides/deposit/close"
+                ]
+              },
+              "guides/owner/products/create",
+              "guides/owner/products/data"
             ]
           },
           {
@@ -84,7 +94,6 @@
           {
             "group": "Gestion des clients",
             "pages": [
-              "guides/customers/types",
               "guides/customers/informations"
             ]
           },
