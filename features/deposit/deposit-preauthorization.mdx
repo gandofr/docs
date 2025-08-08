@@ -1,0 +1,146 @@
+---
+title: "Que dois faire mon client lors d'une caution ?"
+description: "Description of your new file."
+sidebarTitle: "Pré-autorisation de 29 jours"
+---
+
+## Quels sont les types de cartes accéptés ?
+
+seulement les cartes`CB_VISA_MASTERCARD`
+
+<CardGroup cols={3}>
+  <Card title="Visa" img="/images/Visa.png">
+    Carte internationale
+  </Card>
+  <Card title="Mastercard" icon="mastercard">
+    Carte internationale
+  </Card>
+  <Card title="CB" icon="mastercard">
+    Carte internationale
+  </Card>
+</CardGroup>
+
+Nous n'acceptons pas les cartes suivantes :
+
+- Les American Express
+- Les Diners Club International
+- Les Visa Electron
+- Les Mastercard Maestro
+- Les cartes de débit à autorisation systématique
+- Les cartes prépayées
+- Les e-cartes bancaires
+- Les Girocard
+
+Ces cartes bancaires ne permettent malheureusement pas le débit à postériori ou les transactions en ligne, elles ne sont donc pas valables pour déposer une caution.
+
+**Sécuriser les fonds**
+
+Sécurisez les fonds avec le point de terminaison [**de préautorisation de création de dépôt POST**](https://docs.mangopay.com/api-reference/deposit-preauthorizations/create-deposit-preauthorization)
+
+**2**
+
+**Capturer le paiement**
+
+Capturez les fonds préautorisés à l'aide du point de terminaison dédié [**POST Créer un dépôt Préautorisé PayIn sans complément**](https://docs.mangopay.com/api-reference/deposit-preauthorizations/create-deposit-preauthorized-payin-without-complement)
+
+Ce scénario est décrit étape par étape dans le tutoriel :
+
+[**Comment traiter une préautorisation de 30 jours →**](https://docs.mangopay.com/guides/payment-methods/card/deposit-preauthorization/how-to)
+
+**Remarque : la capture multiple n'est pas possible avec une préautorisation de 30 jours**
+
+La multi-capture n'est disponible que pour une préautorisation de 7 jours.
+
+## [**​**](https://docs.mangopay.com/guides/payment-methods/card/deposit-preauthorization#complement-features)
+
+**Fonctionnalités complémentaires**
+
+La préautorisation de 30 jours s'accompagne également de fonctionnalités supplémentaires :
+
+- **Complément après versement** – ​​Capturez plus que le montant préautorisé initial
+- **Complément après non-présentation** – Récupérez des fonds supplémentaires grâce à une préautorisation non utilisée
+
+Ces fonctionnalités impliquent toutes deux le prélèvement d'un montant complémentaire en plus du montant initialement préautorisé. La capture du dépôt préautorisé et le complément de dépôt sont tous deux liés à l'objet Dépôt dans le `PayinsLinked`paramètre.
+
+Pour obtenir des conseils étape par étape sur tous les scénarios complémentaires, consultez le didacticiel :
+
+[**Comment traiter une préautorisation de 30 jours →**](https://docs.mangopay.com/guides/payment-methods/card/deposit-preauthorization/how-to)
+
+#### [**​**](https://docs.mangopay.com/guides/payment-methods/card/deposit-preauthorization#complement-after-pay-in)
+
+**Complément après versement**
+
+Les plateformes peuvent vouloir collecter plus que le montant initialement préautorisé, par exemple si les utilisateurs finaux bénéficient de services supplémentaires ou si des dommages ont été subis lors d'une location.
+
+Les étapes sont les suivantes :
+
+**1**
+
+**Sécuriser les fonds**
+
+Sécurisez les fonds avec le point de terminaison [**de préautorisation de création de dépôt POST**](https://docs.mangopay.com/api-reference/deposit-preauthorizations/create-deposit-preauthorization)
+
+**2**
+
+**Capturez les paiements et signalez l'intention de compléter**
+
+Capturez les fonds préautorisés, tout en signalant l'intention de capturer un montant supplémentaire, en utilisant le [**POST dédié Créer un dépôt Préautorisé PayIn avant le**](https://docs.mangopay.com/api-reference/deposit-preauthorizations/create-deposit-preauthorized-payin-prior-to-complement) point de terminaison complémentaire
+
+**3**
+
+**Capture du complément de paiement**
+
+Débitez la carte du montant supplémentaire avec le point de terminaison [**complémentaire POST Créer un dépôt Préautorisé PayIn**](https://docs.mangopay.com/api-reference/deposit-preauthorizations/create-deposit-preauthorized-payin-complement)
+
+**Remarque - Le versement avant complément doit être** une capture complète du montant préautorisé - il ne peut pas être partiel.
+
+#### [**​**](https://docs.mangopay.com/guides/payment-methods/card/deposit-preauthorization#complement-after-no-show)
+
+**Complément après une absence**
+
+Les plateformes peuvent souhaiter collecter des fonds supplémentaires si les fonds initialement préautorisés n'ont pas été collectés. Par exemple, une pénalité pourrait être appliquée si les utilisateurs annulent une réservation à la dernière minute.
+
+Les étapes sont les suivantes :
+
+**1**
+
+**Sécuriser les fonds**
+
+Sécurisez les fonds avec le point de terminaison [**de préautorisation de création de dépôt POST**](https://docs.mangopay.com/api-reference/deposit-preauthorizations/create-deposit-preauthorization)
+
+**2**
+
+**Demande de non-présentation**
+
+Demandez la non-présentation, qui signale également l'intention de capturer un montant supplémentaire, en utilisant le point de terminaison [**PUT Annuler une préautorisation de dépôt ou demander une non-présentation**](https://docs.mangopay.com/api-reference/deposit-preauthorizations/cancel-deposit-preauthorization-request-no-show)
+
+**3**
+
+**Capture du complément de paiement**
+
+Débitez la carte du montant supplémentaire avec le point de terminaison [**complémentaire POST Créer un dépôt Préautorisé PayIn**](https://docs.mangopay.com/api-reference/deposit-preauthorizations/create-deposit-preauthorized-payin-complement)
+
+#### [**​**](https://docs.mangopay.com/guides/payment-methods/card/deposit-preauthorization#behavior-of-complement-pay-ins)
+
+**Comportement des versements complémentaires**
+
+Le versement initial et le complément bénéficient tous deux de l'autorisation de préautorisation de dépôt. Le complément bénéficie d'une exemption au 3DS.
+
+Le montant du complément peut être supérieur au montant initialement préautorisé, mais l'émetteur a le droit de refuser le complément si le montant (ou le calendrier) ne sont pas satisfaisants.
+
+Si le paiement complémentaire est refusé, vous pouvez le réessayer sur le même point de terminaison.
+
+## Étape 1 : Préautorisation
+
+- **Réserver les fonds** : Tout d'abord, vous devez réserver les fonds sur la carte de votre client. Cela signifie que vous demandez à la banque de bloquer un certain montant sur la carte, mais sans le débiter immédiatement.
+- **Informations nécessaires** : Vous aurez besoin des informations de la carte et du montant que vous souhaitez réserver.
+
+## Étape 2 : Capture des fonds
+
+- **Débiter les fonds réservés** : Une fois que les fonds sont réservés, vous pouvez les débiter réellement. Cela s'appelle la capture.
+- **Choisir le montant à capturer** : Vous pouvez choisir de capturer tout le montant réservé ou une partie de celui-ci, selon ce que vous avez prévu avec votre client.
+- **Cas particuliers** : Dans certains cas, vous pourriez devoir rediriger votre client vers une page sécurisée pour vérifier son identité (c'est ce qu'on appelle 3DS).
+
+## Que faire en cas d'échec ?
+
+Si jamais vous recevez un message d'erreur, assurez vous dans un premier temps de ce genre que votre carte à les fonds suffisant

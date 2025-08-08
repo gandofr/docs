@@ -1,11 +1,12 @@
+
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#735DF3",
+    "light": "#735DF3",
+    "dark": "#735DF3"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -14,55 +15,91 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Premiers pas",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "introduction",
+              "howtomake"
             ]
           },
           {
-            "group": "Customization",
+            "group": "General",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
+              "general/sign-up",
+              {
+                "group": "Compte",
+                "pages": [
+                  "general/account/info-account",
+                  "general/account/identity",
+                  "general/account/bank"
+                ]
+              },
+              {
+                "group": "Abonnement et facturation",
+                "pages": [
+                  "general/billing/fees",
+                  "general/billing/invoicing",
+                  "general/billing/offers"
+                ]
+              },
+              "general/forgotpassword",
+              "general/cant-login-platform"
+            ] 
           },
           {
-            "group": "Writing content",
+            "group": "Conditions et Confidentialié",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "terms-policy/cguv",
+              "terms-policy/policy",
+              "terms-policy/referral",
+              "terms-policy/cookie"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Fonctionnalités",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Aperçu",
             "pages": [
-              "api-reference/introduction"
+              "features/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Gestion des véhicules",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "features/products/create",
+              "features/products/data"
+            ]
+          },
+          {
+            "group": "Caution",
+            "pages": [
+              "features/deposit/how-to",
+              "features/deposit/deposit-preauthorization",              
+              "features/deposit/capture",
+              "features/deposit/close",
+              "features/deposit/disputes"
+            ]
+          },
+          {
+            "group": "Gestion des clients",
+            "pages": [
+              "features/customers/types",
+              "features/customers/informations"
+            ]
+          },
+          {//
+            "group": "Paiements",
+            "pages": [
+              "features/payment/payment-methods"
+            ]//
+          },
+          {
+            "group": "Solde",
+            "pages": [
+              "features/balance/view",
+              "features/balance/transfer"
             ]
           }
         ]
@@ -71,18 +108,13 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Site web",
+          "href": "https://gando.pro",
+          "icon": "house-laptop"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://gando.pro/blog",
           "icon": "newspaper"
         }
       ]
@@ -95,33 +127,23 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Contacter le service commercial",
+        "href": "mailto:contact@gando.pro"
+      },
+      {
+        "label": "Demande d'assistance",
+        "href": "mailto:contact@gando.pro"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.gando.pro"
     }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "linkedin": "https://www.linkedin.com/company/gando-france/?viewAsMember=true"
     }
   }
 }
