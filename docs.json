@@ -22,29 +22,6 @@
             ]
           },
           {
-            "group": "General",
-            "pages": [
-              "general/sign-up",
-              {
-                "group": "Compte",
-                "pages": [
-                  "general/account/info-account",
-                  "general/account/identity",
-                  "general/account/bank"
-                ]
-              },
-              {
-                "group": "Facturation",
-                "pages": [
-                  "billing/fees",
-                  "billing/invoicing"
-                ]
-              },
-              "general/forgotpassword",
-              "general/cant-login-platform"
-            ] 
-          },
-          {
             "group": "Facturation",
             "pages": [
               "billing/fees",
