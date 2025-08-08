@@ -45,6 +45,13 @@
             ] 
           },
           {
+            "group": "Facturation",
+            "pages": [
+              "billing/fees",
+              "billing/invoicing"
+            ]
+          },
+          {
             "group": "Sécurité",
             "pages": [
               "security/dataprotection",
