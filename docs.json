@@ -37,8 +37,7 @@
                 "group": "Abonnement et facturation",
                 "pages": [
                   "general/billing/fees",
-                  "general/billing/invoicing",
-                  "general/billing/offers"
+                  "general/billing/invoicing"
                 ]
               },
               "general/forgotpassword",
