@@ -50,7 +50,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Démarrer,
+            "group": "Démarrer",
             "pages": [
               "features/general/cant-login-platform",
               "features/general/forgotpassword",
