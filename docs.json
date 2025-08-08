@@ -78,37 +78,19 @@
                   "guides/owner/deposit/close"
                 ]
               },
-              "guides/owner/products/create",
-              "guides/owner/products"
-            ]
-          },
-          {
-            "group": "Caution",
-            "pages": [
-              "guides/deposit/how-to",
-              "guides/deposit/deposit-preauthorization",              
-              "guides/deposit/capture",
-              "guides/deposit/close",
-              "guides/deposit/disputes"
-            ]
-          },
-          {
-            "group": "Gestion des clients",
-            "pages": [
-              "guides/customers/informations"
+              {
+                "group": "Compte et paramètres",
+                "pages": [
+                  "guides/owner/account/info-account",             
+                  "guides/owner/deposit/bank"
+                ]
+              }
             ]
           },
           {
             "group": "Pour les locataires",
             "pages": [
               "guides/payment/payment-methods"
-            ]
-          },
-          {
-            "group": "Solde",
-            "pages": [
-              "features/balance/view",
-              "features/balance/transfer"
             ]
           }
         ]
