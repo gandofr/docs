@@ -60,7 +60,7 @@
         "tab": "Fonctionnalités",
         "groups": [
           {
-            "group": "Aperçu",
+            "group": "features",
             "pages": [
               "features/introduction"
             ]
