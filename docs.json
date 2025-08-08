@@ -52,39 +52,42 @@
           {
             "group": "Démarrer",
             "pages": [
-              "features/general/cant-login-platform",
-              "features/general/forgotpassword",
-              "features/general/sign-up"
+              "guides/general/cant-login-platform",
+              "guides/general/forgotpassword",
+              "guides/general/sign-up"
             ]
           },
           {
-            "group": "Gestion des véhicules",
+            "group": "Pour les propriétaires et gestionnaires",
             "pages": [
-              "features/products/create",
-              "features/products/data"
+              "guides/owner/products/create",
+              "guides/owner/products/data",
+              "guides/owner/balance/view",
+              "guides/owner/balance/transfer"
+              
             ]
           },
           {
             "group": "Caution",
             "pages": [
-              "features/deposit/how-to",
-              "features/deposit/deposit-preauthorization",              
-              "features/deposit/capture",
-              "features/deposit/close",
-              "features/deposit/disputes"
+              "guides/deposit/how-to",
+              "guides/deposit/deposit-preauthorization",              
+              "guides/deposit/capture",
+              "guides/deposit/close",
+              "guides/deposit/disputes"
             ]
           },
           {
             "group": "Gestion des clients",
             "pages": [
-              "features/customers/types",
-              "features/customers/informations"
+              "guides/customers/types",
+              "guides/customers/informations"
             ]
           },
           {
-            "group": "Paiements",
+            "group": "Pour les locataires",
             "pages": [
-              "features/payment/payment-methods"
+              "guides/payment/payment-methods"
             ]
           },
           {
