@@ -60,7 +60,7 @@
           {
             "group": "Pour les propriétaires et gestionnaires",
             "pages": [  
-              "guides/customers/informations"
+              "guides/customers/informations",
               {
                 "group": "Solde",
                 "pages": [
