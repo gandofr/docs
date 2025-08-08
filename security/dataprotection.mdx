@@ -2,3 +2,118 @@
 title: "Protection de vos données bancaires"
 description: "Nous accédons à vos informations bancaires uniquement avec votre consentement explicite, via des connexions sécurisées et en lecture seule. Vos données sont chiffrées, minimisées, conservées seulement pour la durée nécessaire, et traitées conformément au PSD2, au RGPD et aux règles de contrôle prudentiel (ACPR)."
 ---
+
+## 1) Qui accède à vos données — rôle d’un AISP et agrément ACPR
+
+- **AISP (Account Information Service Provider)** : un fournisseur de services d’information sur les comptes (AISP) peut lire les données de compte pour fournir des services (ex. scoring, agrégation). Un AISP **n’a pas** le droit d’initier des paiements ou de déplacer des fonds — l’accès est **read-only**. [GoCardless](https://gocardless.com/guides/posts/what-is-tpp-in-open-banking/?utm_source=chatgpt.com)[Yodlee](https://www.yodlee.com/open-banking/aisp-pisp?utm_source=chatgpt.com)
+- **Agrément / enregistrement** : en France, les PSP/AISP doivent s’enregistrer ou être agréés par l’**ACPR** (Banque de France) ou exercer via un passeport européen ; l’ACPR vérifie notamment la sécurité, le contrôle interne et la conformité. Si nous utilisons un partenaire agréé, son statut est vérifiable auprès de l’ACPR. [ACPR\+1](https://acpr.banque-france.fr/fr/professionnels/lacpr-vous-accompagne/banque/creer-ma-societe/mes-procedures/etablissement-de-paiement-et-prestataire-de-service-dinformation-sur-les-comptes?utm_source=chatgpt.com)
+
+**Ce que cela signifie pour vous** : nous travaillons avec (ou sommes) des prestataires régulés — l’accès à vos comptes suit un cadre légal strict, avec obligations de transparence et de sécurité.
+
+---
+
+## 2) Consentement et authentification (PSD2)
+
+- **Consentement explicite** : avant toute lecture de vos données, vous donnez un consentement clair, spécifique et réversible ; ce consentement est distinct et complémentaire des règles du RGPD. [EDPB](https://www.edpb.europa.eu/sites/default/files/files/file1/edpb_guidelines_202006_psd2_afterpublicconsultation_en.pdf?utm_source=chatgpt.com)
+- **Strong Customer Authentication (SCA)** : l’accès se fait via les mécanismes d’authentification forte imposés par PSD2 (par ex. 2-facteurs côté banque). Nous ne demandons **jamais** vos identifiants bancaires, la connexion passe par les API bancaires ou un prestataire technique agréé. [cyscale.com](https://cyscale.com/blog/PSD2-technical-requirements/?utm_source=chatgpt.com)[Finexer Open Banking Blogs](https://blog.finexer.com/open-banking-aisp-vs-pisp-explained/?utm_source=chatgpt.com)
+
+[**Bridge API**](https://www.bridgeapi.io/)
+
+**Pratique** : vous êtes redirigé(e) vers l’interface de votre banque (ou une interface sécurisée fournie par un prestataire agréé) pour authentifier la connexion ; nous ne voyons ni ne stockons votre mot de passe.
+
+---
+
+## 3) Accès en lecture seule — ce que le bailleur / l’agence voit (et ne voit pas)
+
+- **Ce que nous transmettons au propriétaire** : uniquement une **attestation** de capacité (décision : garantie accordée / niveau de couverture / durée), pas l’historique détaillé de vos opérations ou vos identifiants.
+- **Ce que nous ne transmettons jamais** : relevés complets, identifiants, mots de passe, opérations sensibles — les données brutes restent sous notre contrôle réglementé et sont pseudonymisées/agrégées si nécessaire.
+
+**But** : rassurer le bailleur tout en préservant votre confidentialité.
+
+---
+
+## 4) Chiffrement et cryptographie
+
+- **Transits chiffrés** : toutes les communications entre votre banque, notre plateforme et nos prestataires utilisent TLS (HTTPS) avec suites modernes (TLS 1.2\+ / meilleures pratiques).
+- **Chiffrement au repos** : données sensibles stockées sont chiffrées au repos (ex. AES-256 ou équivalent), avec clefs gérées via un service de gestion des clefs sécurisé (KMS).
+- **Tokenisation** : lorsque c’est possible, les identifiants ou références sont remplacés par des **tokens** — les tokens n’ont de valeur que dans notre système et ne permettent pas d’accès bancaire direct.
+
+_(Ces mesures sont des bonnes pratiques cohérentes avec les attentes réglementaires et les standards de sécurité)_. [cyscale.com](https://cyscale.com/blog/PSD2-technical-requirements/?utm_source=chatgpt.com)[Open Banking EU](https://openbankingeu.mastercard.com/blog/understanding-ais-and-pis-and-how-they-can-boost-your-business/?utm_source=chatgpt.com)
+
+---
+
+## 5) Principe de minimisation et conservation limitée (RGPD \+ CNIL)
+
+- **Minimisation** : nous collectons **seulement** les données nécessaires pour effectuer l’analyse et émettre la garantie (ex. montants et périodicité des revenus, stabilité des flux) — pas de collecte superflue.
+- **Conservation limitée** : les données sont conservées **uniquement** pour la durée requise par le service (ex. durée du traitement \+ obligations légales), puis supprimées ou anonymisées. Les durées suivront la finalité et les recommandations CNIL (conserver « le temps nécessaire » et documenter les durées). [CNIL\+1](https://www.cnil.fr/fr/passer-laction/les-durees-de-conservation-des-donnees?utm_source=chatgpt.com)
+
+**Transparence** : dans votre espace, vous trouverez la durée précise de conservation applicable à chaque type de données (ex. preuves d’analyse, logs, attestation délivrée).
+
+---
+
+## 6) Contrôles internes, audits et certifications
+
+- **Contrôle interne** : nous appliquons un dispositif de contrôle interne (séparation des fonctions, revues régulières, gestion des risques opérationnels) évalué en phase d’agrément. [ACPR](https://acpr.banque-france.fr/fr/professionnels/lacpr-vous-accompagne/parcours-fintech/contenus-pedagogiques/points-dattention-de-lacpr-dans-linstruction-des-dossiers-dagrement-dans-les-domaines-bancaire?utm_source=chatgpt.com)
+- **Audits externes & pentests** : audits de sécurité périodiques (audit SOC 2 / ISO 27001 si disponibles) et tests d’intrusion réalisés par des tiers indépendants. Les résultats critiques donnent lieu à plans d’actions avec suivi.
+- **Traçabilité** : journaux d’accès et d’événements conservés et protégés pour permettre des enquêtes en cas d’incident.
+
+---
+
+## 7) Sous-traitants & transferts (qui traite vos données ?)
+
+- **Liste des sous-traitants** : nous utilisons des prestataires techniques (ex. fournisseurs d’API bancaires, KMS, hébergement). Nous publions la liste et les statuts (agréments, localisation des données).
+- **Contrats** : tous les sous-traitants signent des clauses de traitement conformes au RGPD (inscriptions, obligations de sécurité, assistance en cas d’exercice des droits, etc.).
+- **Transferts hors UE** : si un traitement implique un pays hors UE, nous appliquons des garanties appropriées (clauses contractuelles types ou autre mécanisme légal). [Service Public Entreprendre](https://entreprendre.service-public.fr/vosdroits/F24270?utm_source=chatgpt.com)
+
+---
+
+## 8) Surveillance, détection et réponse aux incidents
+
+- **Surveillance 24/7** : systèmes de détection d’intrusion, alertes et monitoring d’intégrité.
+- **Plan de réponse** : procédure d’investigation, mitigation et notification des personnes concernées / autorités compétentes (CNIL / ACPR) en cas de violation de données, selon les délais légaux.
+- **Simulations** : exercices réguliers de type « tabletop » et revue post-incident.
+
+---
+
+## 9) Vos droits et actions possibles
+
+- **Droit d’accès** : demandez quelles données nous détenons à votre sujet.
+- **Droit de rectification** : corrigez des informations inexactes.
+- **Droit à l’effacement** : demandez la suppression lorsque la conservation n’est plus nécessaire (selon contraintes légales).
+- **Droit d’opposition / limitation** : dans les cas applicables.
+- **Révocation du consentement** : vous pouvez révoquer le consentement donné pour l’accès à votre compte à tout moment depuis votre espace client ou auprès de votre banque — la révocation dans notre interface mettra fin aux accès futurs ; elle n’efface pas automatiquement les traces nécessaires au respect d’obligations légales, mais déclenche les procédures de suppression/archivage prévues. [EDPB](https://www.edpb.europa.eu/sites/default/files/files/file1/edpb_guidelines_202006_psd2_afterpublicconsultation_en.pdf?utm_source=chatgpt.com)[CNIL](https://www.cnil.fr/fr/passer-laction/les-durees-de-conservation-des-donnees?utm_source=chatgpt.com)
+
+**Comment révoquer maintenant** : allez dans « Paramètres \> Accès bancaires » → sélectionnez la connexion → cliquer « Révoquer l’accès ». Vous pouvez aussi gérer les autorisations depuis l’espace de votre banque (liste des tiers autorisés).
+
+---
+
+## 10) FAQ rapide (questions fréquentes)
+
+**Q : Vous pouvez débiter mon compte ?**\
+A : Non. Nous n’avons qu’un accès **lecture seule** — impossible d’initier des paiements. [GoCardless](https://gocardless.com/guides/posts/what-is-tpp-in-open-banking/?utm_source=chatgpt.com)
+
+**Q : Combien de temps mes relevés sont-ils conservés ?**\
+A : Seulement le temps nécessaire à la délivrance et à l’exécution de la garantie, puis archivage légal ; la durée exacte est indiquée dans votre espace et dans notre politique de confidentialité. [CNIL](https://www.cnil.fr/fr/passer-laction/les-durees-de-conservation-des-donnees?utm_source=chatgpt.com)
+
+**Q : Puis-je contester la décision de scoring ?**\
+A : Oui — vous pouvez demander des explications, une révision et exercer vos droits RGPD ; la démarche est décrite dans la section « Contestation & révisions ».
+
+---
+
+## 11) Engagements concrets (ce que nous garantissons)
+
+- Ne jamais demander vos identifiants bancaires.
+- Accès limité, chiffré et traçable.
+- Transparence sur les usages et la durée de conservation.
+- Partenaires et sous-traitants soumis aux mêmes obligations contractuelles.
+- Notification rapide en cas d’incident.
+
+---
+
+## Sources & références utiles (pour en savoir plus)
+
+- Rôle et fonctionnement des AISPs / open banking. [GoCardlessslimpay.com](http://GoCardlessslimpay.com)
+- Obligations PSD2 (consentement explicite) et interplay avec le RGPD. [EDPB](https://www.edpb.europa.eu/sites/default/files/files/file1/edpb_guidelines_202006_psd2_afterpublicconsultation_en.pdf?utm_source=chatgpt.com)
+- Exigences techniques et SCA (authentification forte). [cyscale.com](http://cyscale.com)
+- Durées de conservation et principes CNIL / RGPD. [CNIL\+1](https://www.cnil.fr/fr/passer-laction/les-durees-de-conservation-des-donnees?utm_source=chatgpt.com)
+- Exigences ACPR pour l’agrément et le contrôle interne. [ACPR\+1](https://acpr.banque-france.fr/fr/professionnels/lacpr-vous-accompagne/banque/creer-ma-societe/mes-procedures/etablissement-de-paiement-et-prestataire-de-service-dinformation-sur-les-comptes?utm_source=chatgpt.com)

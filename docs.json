@@ -34,15 +34,22 @@
                 ]
               },
               {
-                "group": "Abonnement et facturation",
+                "group": "Facturation",
                 "pages": [
-                  "general/billing/fees",
-                  "general/billing/invoicing"
+                  "billing/fees",
+                  "billing/invoicing"
                 ]
               },
               "general/forgotpassword",
               "general/cant-login-platform"
             ] 
+          },
+          {
+            "group": "Sécurité",
+            "pages": [
+              "security/dataprotection",
+              "security/howtoanalyse"
+            ]
           },
           {
             "group": "Conditions et Confidentialié",
