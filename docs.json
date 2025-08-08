@@ -60,11 +60,15 @@
           {
             "group": "Pour les propriétaires et gestionnaires",
             "pages": [
-              "guides/owner/products/create",
-              "guides/owner/products/data",
+              {
+                "group": "Solde",
+                "pages": [
+                  "guides/owner/products/create",
+                  "guides/owner/products/data"
+                ]
+              },
               "guides/owner/balance/view",
               "guides/owner/balance/transfer"
-              
             ]
           },
           {
