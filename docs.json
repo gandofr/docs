@@ -89,11 +89,11 @@
               "features/customers/informations"
             ]
           },
-          {//
+          {
             "group": "Paiements",
             "pages": [
               "features/payment/payment-methods"
-            ]//
+            ]
           },
           {
             "group": "Solde",
