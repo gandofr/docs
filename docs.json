@@ -50,11 +50,11 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Démarrer",
+            "group": "Général",
             "pages": [
-              "guides/general/cant-login-platform",
+              "guides/general/sign-up",
               "guides/general/forgotpassword",
-              "guides/general/sign-up"
+              "guides/general/cant-login-platform"
             ]
           },
           {
@@ -73,7 +73,8 @@
                 "group": "Gestion des cautions",
                 "pages": [
                   "guides/owner/deposit/how-to",
-                  "guides/owner/deposit/submit",              
+                  "guides/owner/deposit/submit", 
+                  "guides/owner/deposit/follow-up",
                   "guides/owner/deposit/capture",
                   "guides/owner/deposit/close"
                 ]
@@ -90,7 +91,16 @@
           {
             "group": "Pour les locataires",
             "pages": [
-              "guides/payment/payment-methods"
+              "guides/renter/request-deposit",
+              "guides/renter/denied",
+              "guides/renter/bank-score",
+              "guides/renter/payment-methods"
+            ]
+          },
+          {
+            "group": "Litiges",
+            "pages": [
+              "guides/renter/request-deposit"
             ]
           }
         ]
