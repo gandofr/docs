@@ -18,7 +18,8 @@
             "group": "Premiers pas",
             "pages": [
               "introduction",
-              "howtomake"
+              "howtomake",
+              "glossary"
             ]
           },
           {
@@ -100,7 +101,7 @@
           {
             "group": "Litiges",
             "pages": [
-              "guides/renter/request-deposit"
+              "guides/dispute"
             ]
           }
         ]
