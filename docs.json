@@ -128,18 +128,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Contacter le service commercial",
-        "href": "mailto:contact@gando.pro"
-      },
-      {
         "label": "Demande d'assistance",
-        "href": "mailto:contact@gando.pro"
+        "href": "https://www.gando.app/demande-d-assistance"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://app.gando.pro"
+      "href": "https://app.gando.app"
     }
   },
   "footer": {
