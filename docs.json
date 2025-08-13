@@ -110,12 +110,12 @@
       "anchors": [
         {
           "anchor": "Site web",
-          "href": "https://gando.pro",
+          "href": "https://gando.app",
           "icon": "house-laptop"
         },
         {
           "anchor": "Blog",
-          "href": "https://gando.pro/blog",
+          "href": "https://gando.app/blog",
           "icon": "newspaper"
         }
       ]
