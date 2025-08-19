@@ -83,7 +83,7 @@
                 "group": "Compte et paramètres",
                 "pages": [
                   "guides/owner/account/info-account",             
-                  "guides/owner/deposit/bank"
+                  "guides/owner/account/bank"
                 ]
               }
             ]

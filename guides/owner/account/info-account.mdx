@@ -7,19 +7,16 @@ title: "Comment configurer les informations du compte"
 Une fois vos informations enregistrés vous serez redirigé vers une page, vous recevez par la suite un lien de confirmation par mail.
 
 <Frame>
-  <img
-    src="/images/email-verification.svg"
-    style={{ borderRadius:"0.5rem" }}
-  />
+  
 </Frame>
 
-## Informations de l'entreprise
+## Informations générales
 
 <AccordionGroup>
-  <Accordion title="Ou est ce que reçois mes factures Gando">
-    Vous recevez vos factures dans la sections **"**[**Documents**](https://app.gando.pro/g/settings/documents)**"** depuis votre dasboard ou sinon vous depuis votre email via le bouton.
+  <Accordion title="Adresse email" icon="mailbox">
+    Il est impossible aujourd'hui de modifier le
   </Accordion>
-  <Accordion title="Preview changes" icon="rectangle-terminal">
+  <Accordion title="Devise" icon="dollar-sign">
     Previewing helps you make sure your changes look as intended. We built a
     command line interface to render these changes locally.
 
@@ -39,38 +36,33 @@ Une fois vos informations enregistrés vous serez redirigé vers une page, vous 
       You should now be using the new `docs.json` configuration file. Feel free to delete the `mint.json` file from your repository.
     </Note>
   </Accordion>
-</AccordionGroup>
-
-## Fuseau horaire
-
-## Devise
-
-Learn how to update your docs locally and deploy them to the public.
-
-### Edit and preview
-
-<AccordionGroup>
-  <Accordion title="Ou est ce que reçois mes factures Gando">
-    Vous recevez vos factures dans la sections **"**[**Documents**](https://app.gando.pro/g/settings/documents)**"** depuis votre dasboard ou sinon vous depuis votre email via le bouton.
+  <Accordion title="Fuseau horaire" icon="hourglass">
+    
   </Accordion>
-  <Accordion title="Preview changes" icon="rectangle-terminal">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally.
-
-    1. Install the
-       [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-       documentation changes locally with this command: `npm i -g mintlify`
-    2. Run the following command at the root of your documentation (where
-       `docs.json` is): `mintlify dev`
-
-    <Note>
-      If you’re currently using the legacy `mint.json` configuration file, please update the Mintlify CLI:
-
-      `npm i -g mintlify@latest`
-      And run the new upgrade command in your docs repository:
-
-      `mintlify upgrade`
-      You should now be using the new `docs.json` configuration file. Feel free to delete the `mint.json` file from your repository.
-    </Note>
+  <Accordion title="Langue" icon="language">
+    
   </Accordion>
 </AccordionGroup>
+
+## Vérifiez votre identité 
+
+Pour vérifier votre identité, accédez à la page [« Paramètres \> Entreprise »](https://app.lemonsqueezy.com/settings/general) de votre tableau de bord Gando et cliquez sur le bouton « Vérifier votre identité ». Vous serez invité à fournir des documents personnelles et à télécharger une photo de votre pièce d'identité officielle.
+
+### Ce que vous devez faire
+
+<Steps>
+  <Step title="Démarrez la vérification" iconType="solid" titleSize="h3">
+    Veuillez vous connecter à votre compte en utilisant vos identifiants habituels.
+  </Step>
+  <Step title="New Vérifiez vos informations" titleSize="h3">
+    [Suivez les instructions pour vérifier et confirmer vos informations personnelles](https://app.lemonsqueezy.com/settings/general) . Vous devrez peut-être fournir une preuve d'identité et d'autres documents pertinents.
+  </Step>
+  <Step title="Mettre à jour toutes les modifications" titleSize="h3">
+    Si des modifications ont été apportées à vos informations personnelles (par exemple, adresse, numéro de téléphone, e-mail), veuillez les mettre à jour en conséquence.
+  </Step>
+  <Step title="Vérification complète" titleSize="h3">
+    Une fois toutes les informations vérifiées et mises à jour, soumettez le formulaire pour terminer le processus de revérification.
+  </Step>
+</Steps>
+
+Une fois votre identité vérifiée, vous pourrez par la suite associé un compte bancaire à vendre des produits sur Gando. Pour toute question ou assistance concernant la vérification, veuillez [contacter notre équipe d'assistance](https://www.lemonsqueezy.com/help) .
