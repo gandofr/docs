@@ -4,3 +4,86 @@ description: "Description of your new file."
 icon: "loader"
 sidebarTitle: "Analyse du risque"
 ---
+
+### **Une évaluation basée sur l’Open Banking**
+
+L’analyse du risque réalisée par Gando repose sur la technologie **Open Banking**, conforme à la directive européenne **DSP2**.
+
+Concrètement, vous autorisez Gando, via une connexion sécurisée, à accéder à certaines informations de votre compte bancaire. Cette autorisation est temporaire, strictement encadrée, et ne permet **ni prélèvement, ni mouvement d’argent**.
+
+L’objectif est exclusivement d’analyser la situation financière du client afin d’évaluer le risque lié à la caution.
+
+#### **Comment se déroule l’autorisation ?**
+
+Le locataire est invité, via l’interface de Gando, à connecter son compte bancaire.
+
+Dans le module de notre prestataire agréé **Bridge Connect**, il sélectionne sa banque parmi une liste exhaustive.
+
+Le locataire est redirigé vers l’environnement sécurisé de son établissement bancaire et s’authentifie avec ses identifiants habituels.
+
+Avant de transmettre les données, la banque demande au locataire de donner son **consentement explicite**. Ce consentement précise quelles données seront partagées, la **finalité** et la **durée de validité de l’accès**.
+
+La banque transmet à Gando, de manière **chiffrée et sécurisée**, un jeu de données limité nécessaire à l’analyse du risque.
+
+L’accès est valable uniquement le temps de l’opération. Une fois l’évaluation réalisée, l’autorisation expire automatiquement.
+
+#### **Quelles informations sont demandées au client ?**
+
+Pour activer l’Open Banking, le locataire doit fournir :
+
+- L’autorisation explicite de consultation (consentement légalement requis),
+- Ses identifiants bancaires **uniquement pour authentification** (jamais stockés, ni conservés),
+- L’accès à un ou plusieurs de ses comptes de paiement (compte courant principal le plus souvent).
+
+### **2. Données consultées**
+
+Pour évaluer votre solvabilité, Gando analyse uniquement les informations nécessaires à la constitution d’un **profil de fiabilité financière**. Cela inclut :
+
+- Vos revenus réguliers (salaires, prestations, etc.),
+- Vos charges principales (loyer, crédits, abonnements),
+- Votre historique de paiements (incidents éventuels, rejets de prélèvements),
+- Votre niveau d’endettement global.
+
+Aucune donnée superflue (par ex. intitulé des dépenses personnelles) n’est exploitée.
+
+### **3. Calcul du scoring bancaire**
+
+Les informations collectées sont traitées par l’algorithme de scoring Gando, qui évalue :
+
+- la **capacité de paiement** du locataire (revenus mensuels vs charges régulières),
+- la **stabilité des flux financiers** (récurrence des revenus, absence de découvert chronique),
+- l’**historique de paiements** (incidents, rejets, régularité des prélèvements),
+- le **taux d’endettement global**.
+
+Le système d’analyse génère un **score de solvabilité en temps réel** et classe le locataire dans une **catégorie de risque**, communiquée uniquement au loueur afin qu’il puisse accepter ou refuser la caution.
+
+#### **Impact sur la commission de sécurisation**
+
+La particularité de Gando est que la **commission de sécurisation, supportée par le locataire, varie selon le score obtenu**.
+
+- **Profil fiable** → commission minimale, car le risque est quasi nul.
+- **Profil intermédiaire** → commission modérée, reflétant un risque mesuré.
+- **Profil fragile** → commission plus élevée, correspondant à la couverture du risque accru.
+
+Ce modèle permet :
+
+- au **loueur** d’être protégé de manière proportionnelle au risque réel,
+- au **locataire fiable** de bénéficier d’une caution sécurisée à un coût réduit,
+- à Gando de garantir une **équité tarifaire** entre profils différents.
+
+### **4. Confidentialité et sécurité**
+
+- Les données sont transmises via des canaux **chiffrés de bout en bout**.
+- L’accès est limité dans le temps et expire automatiquement après l’analyse.
+- Gando ne conserve jamais vos identifiants bancaires.
+- Vous gardez le contrôle total de vos informations : aucune donnée n’est utilisée à d’autres fins que la validation de la caution.
+
+### **5. Pourquoi cette analyse est-elle essentielle ?**
+
+L’analyse bancaire permet de :
+
+- Protéger le loueur contre les impayés et les dégradations,
+- Éviter au locataire le blocage d’une somme importante en caution,
+- Renforcer la transparence et la confiance entre les deux parties.
+
+En résumé : Gando vérifie votre compte bancaire via une connexion **Open Banking sécurisée**, analyse vos revenus et vos charges pour établir un score de solvabilité, et transmet uniquement le niveau de fiabilité du profil au loueur.
