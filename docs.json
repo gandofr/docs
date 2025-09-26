@@ -73,7 +73,8 @@
                 "pages": [
                   "guides/owner/deposit/how-to",
                   "guides/owner/deposit/capture",
-                  "guides/owner/deposit/close"
+                  "guides/owner/deposit/close",
+                  "guides/owner/deposit/capture"
                 ]
               },
               {
