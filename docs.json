@@ -90,6 +90,7 @@
             "group": "Pour les locataires",
             "pages": [
               "guides/renter/request-deposit",
+              "guides/renter/why-connect-my-bank-account",
               "guides/renter/denied",
               "guides/renter/bank-score",
               "guides/renter/payment-methods"
