@@ -10,6 +10,20 @@
   },
   "favicon": "favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Site web",
+          "icon": "house-laptop",
+          "href": "https://gando.app"
+        },
+        {
+          "anchor": "Blog",
+          "icon": "newspaper",
+          "href": "https://gando.app/blog"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Informations",
@@ -40,7 +54,8 @@
             "pages": [
               "terms-policy/cguv",
               "terms-policy/policy",
-              "terms-policy/cookie"
+              "terms-policy/cookie",
+              "terms-policy/nos-cguv-pour-les-clients-finaux"
             ]
           }
         ]
@@ -58,7 +73,7 @@
           },
           {
             "group": "Pour les propriétaires et gestionnaires",
-            "pages": [ 
+            "pages": [
               "guides/owner/products",
               "guides/owner/customers/informations",
               {
@@ -80,7 +95,7 @@
               {
                 "group": "Compte et paramètres",
                 "pages": [
-                  "guides/owner/account/info-account",             
+                  "guides/owner/account/info-account",
                   "guides/owner/account/bank"
                 ]
               }
@@ -104,21 +119,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Site web",
-          "href": "https://gando.app",
-          "icon": "house-laptop"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://gando.app/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
