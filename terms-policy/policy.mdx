@@ -5,97 +5,273 @@ icon: "user-police"
 sidebarTitle: "Politique de confidentialité"
 ---
 
-<Note>
-  Date de modification: 11/04/2025
-</Note>
+**Dernière mise à jour : 28 mai 2026**
 
-Chez Gando, accessible depuis [https://gando.](https://gando.pro)app Nous sommes conscients de l'importance de la protection de la vie privée de nos utilisateurs. Nous avons par conséquent mis en place une politique décrivant la façon dont vos données à caractère personnel sont traitées et protégées.
+La présente politique décrit comment **Gando** traite vos données personnelles lorsque vous utilisez nos services de sécurisation de caution sans blocage de fonds, que vous soyez **loueur** (client professionnel) ou **client final** (locataire payant la sécurisation).
 
-Cette politique de confidentialité s'applique uniquement à nos activités en ligne et est valable pour les visiteurs de notre site web en ce qui concerne les informations qu'ils ont partagées et/ou collectées dans Gando. Cette politique n'est pas applicable aux informations collectées hors ligne ou par des canaux autres que ce site web.
+Nous avons rédigé ce document pour qu'il soit lisible. Si une formulation reste obscure, écrivez-nous à [dpo@gando.app](mailto:dpo@gando.app).
 
-En résumé :
+---
 
-- Nous nous conformons au RGPD lorsque nous fournissons nos services.
-- Nous collectons uniquement ce dont nous avons strictement besoin pour que notre service fonctionne.
-- Nous ne vendrons jamais vos données et ne l’avons jamais fait.
-- Nous travaillons uniquement avec des services tiers limités, fiables et sécurisés.
+## 1. Responsable du traitement
 
-## En tant que visiteur du site web Gando
+**Gando**, société par actions simplifiée (SAS) immatriculée au RCS de Paris, dont le siège social est situé à 3 CHEMIN DE LA PORTE VERTE 77144 MONTEVRAIN.
 
-La confidentialité des visiteurs de notre site Web est importante pour nous, c'est pourquoi nous ne suivons aucune personne individuellement.En tant que visiteur du site Web [gando.pro](http://gando.pro) :
+- **Contact général :** [contact@gando.app](mailto:contact@gando.app)
+- **Délégué à la protection des données (DPO) :** [dpo@gando.app](mailto:dpo@gando.app)
+- **Autorité de contrôle :** Commission Nationale de l'Informatique et des Libertés (CNIL), [www.cnil.fr](https://www.cnil.fr)
 
-- Aucune information personnelle n'est collectée
-- Aucun cookie n'est stocké dans le navigateur
+---
 
-Nous nous appuyons sur Google analytic pour les analyses et sur Ionos pour l'hébergement.
+## 2. Données que nous collectons
 
-Lorsque vous nous écrivez, nous pouvons conserver la correspondance électronique , qui comprend l'adresse électronique, afin de disposer d'un historique des correspondances passées auquel nous référer si vous nous contactez à l'avenir. Nous utilisons ces données uniquement pour répondre aux demandes que nous recevons.
+### 2.1 Données collectées directement auprès de vous
 
-## En tant que client et abonné du service Gando
+| Catégorie | Exemples | Concerne |
+| :-- | :-- | :-- |
+| Identité | Nom, prénom, date de naissance, nationalité | Client final, loueur |
+| Coordonnées | E-mail, téléphone, adresse postale | Client final, loueur |
+| Données de connexion | Identifiant, mot de passe (haché), tokens OAuth | Loueur |
+| Données contractuelles | Montant et durée de la caution, références de location | Client final, loueur |
+| Données de paiement | Empreinte 3DS (token de carte non-bloquant), IBAN pour virement loueur | Client final, loueur |
+| Justificatifs (en cas d'encaissement) | Contrat de location, photos, devis, état des lieux | Loueur |
+| Pièces KYC/KYB (selon LCB-FT) | Pièce d'identité, Kbis, justificatif de domicile | Loueur, client final si seuils atteints |
 
-Nous collectons uniquement ce dont nous avons besoin pour fournir le service auquel vous avez souscrit.
+### 2.2 Données collectées via des tiers (avec votre consentement)
 
-- Aucune information n'est partagée avec les sociétés de publicité
-- Aucune information n'est vendue ou monétisée
+| Catégorie | Source | Concerne |
+| :-- | :-- | :-- |
+| Données bancaires (open banking) | **Bridge**, prestataire agréé DSP2 par l'ACPR | Client final |
+| Données de paiement et anti-fraude | **Inflow** (PSP), **Stripe** (cautions en cours de migration) | Client final, loueur |
+| Données transmises par le loueur | Référence du locataire, montant, durée de la location | Client final |
 
-Ce que nous collectons et à quoi nous l'utilisons
+### 2.3 Données collectées automatiquement
 
-- Une adresse e-mail est nécessaire pour créer un compte. Vous devez nous fournir votre adresse e-mail si vous souhaitez créer un compte Gando. Il est indispensable de rattacher vos paramètres et votre utilisation à votre compte pour que nous puissions émettre des factures.
-- Un cookie interne persistant est stocké pour se souvenir que vous êtes connecté . Si vous vous connectez à votre compte Gando, vous nous autorisez à utiliser des cookies afin que vous n'ayez pas à vous connecter à chaque session de retour. Cela vous permet d'utiliser notre produit plus facilement. Consultez notre politique relative aux cookies.
-- Lorsque vous utilisez un fournisseur social pour vous connecter, un jeton d'accès sécurisé (OAuth) est stocké pour associer votre compte Gando.
-- Les mots de passe sont stockés sous forme de hachage pour garantir qu'aucun mot de passe ne puisse être lu ou deviné par quiconque, même nous.
-- Toutes les données que nous collectons et stockons sont entièrement sécurisées et chiffrées sur MongoDB, garantissant une gestion efficace et protégée.
-- Le processus de paiement est géré par Stripe, un fournisseur de paiement tiers, si vous choisissez de passer à un forfait payant Gando. Pour les transactions internes, nous utilisons également MangoPay. Nous dupliquons les informations de facturation (nom complet, adresse de facturation et notes) dans notre base de données pour des raisons de performances, mais nous ne stockons JAMAIS les méthodes de paiement directement, uniquement un identifiant sécurisé fourni par Stripe ou MangoPay.Consultez leurs conditions Stripe ([https://stripe.com/fr/legal/ssa](https://stripe.com/fr/legal/ssa)) et Mangopay ([https://mangopay.com/terms-and-conditions](https://mangopay.com/terms-and-conditions))
-- Tous les e-mails de notifications sont envoyés via notre service mail SMTP2GO.
-- **Mesure d'audience (PostHog) :**\\
-  - Avec votre consentement : PostHog dépose un cookie analytique pour mesurer l'audience de manière anonymisée (pages vues, parcours utilisateur, taux de conversion).\\
-  - Sans votre consentement : PostHog fonctionne en mode sans cookie. L'analyse est agrégée et aucun identifiant persistant n'est stocké.
+| Catégorie | Exemples |
+| :-- | :-- |
+| Données de navigation | Adresse IP, type de navigateur, pages visitées, horodatage |
+| Cookies et traceurs | Cf. section 11 |
+| Analytics produit | Événements d'usage anonymisés via PostHog |
 
-## Conservation des données
+---
 
-Nous conserverons vos informations aussi longtemps que votre compte sera actif, si nécessaire pour vous fournir les services ou comme indiqué dans la présente politique.
+## 3. Finalités, bases légales et durées de conservation
 
-Nous conserverons et utiliserons également ces informations si nécessaire aux fins énoncées dans la présente politique et dans la mesure nécessaire pour nous conformer à nos obligations légales, résoudre les litiges, faire respecter nos accords et protéger les droits légaux de Gando.
+| Finalité | Base légale (RGPD) | Durée de conservation |
+| :-- | :-- | :-- |
+| Création et gestion du compte loueur | Exécution du contrat (Art. 6.1.b) | Durée du compte \+ 5 ans (preuve) |
+| Sécurisation de la caution (client final) | Exécution du contrat (Art. 6.1.b) | Durée de la caution \+ 5 ans |
+| Analyse de solvabilité via open banking (cf. §5) | Consentement explicite (Art. 6.1.a) \+ intérêt légitime | Données bancaires brutes : **90 jours** • Résultat agrégé : 5 ans |
+| Empreinte 3DS sans blocage de fonds | Exécution du contrat | Durée de la sécurisation \+ 13 mois (gestion des contestations) |
+| Recouvrement amiable automatisé | Exécution du contrat | 5 ans après extinction de la créance |
+| Recouvrement contentieux / judiciaire | Intérêt légitime (Art. 6.1.f) \+ obligation légale | 5 ans après clôture du dossier |
+| Lutte contre le blanchiment (LCB-FT) | Obligation légale (Art. L561-12 CMF) | 5 ans après fin de la relation d'affaires |
+| Facturation et comptabilité | Obligation légale (Code de commerce) | 10 ans |
+| Prospection commerciale (loueurs) | Intérêt légitime (Art. 6.1.f) | 3 ans après dernier contact |
+| Envoi d'e-mails transactionnels | Exécution du contrat | Durée de la relation |
+| Mesure d'audience (PostHog) | Consentement (Art. 6.1.a) | 13 mois maximum (recommandation CNIL) |
+| Sécurité, prévention de la fraude | Intérêt légitime | 5 ans |
 
-Vous pouvez choisir de supprimer votre compte Gando à tout moment en nous envoyant une demande. Nous supprimerons toutes vos données et conserverons uniquement les informations légalement requises, telles que les factures, et les utiliserons uniquement à cette fin.
+À l'issue de ces durées, les données sont supprimées ou anonymisées de manière irréversible.
 
-## Stockage des informations personnelles
+---
 
-Nous mettons en œuvre des mesures de sécurité administratives, techniques et physique pour protéger les informations personnelles de nos utilisateurs contre la perte, l'utilisation abusive, l'accès non autorisé, la modification ou la destruction. Cependant, il est important de noter que aucune méthode de transmission sur Internet ou de stockage de données n'est complètement sûre. Bien que nous fassions de notre mieux pour protéger vos informations personnelles, nous ne pouvons pas garantir leur sécurité absolue.
+## 4. Catégories de destinataires
 
-## Protection des données
+Vos données peuvent être partagées avec les destinataires suivants, **uniquement dans la mesure nécessaire** à la finalité concernée :
 
-Nos utilisateurs peuvent demander l'accès, la correction ou la suppression de leurs informations personnelles à tout moment. De plus, les utilisateurs peuvent demander de ne plus recevoir de communications marketing de notre part ou de ne plus être inclus dans nos analyses internes. Les utilisateurs peuvent exercer ces droits en nous contactant à l'adresse [contact@gando.](mailto:contact@gando.pro)app.
+- **Le loueur** ayant créé la caution : identité, statut de la caution, et — uniquement en cas d'activation de la garantie Gando — justificatifs liés à l'encaissement.
+- **Stripe** (Prestataire de Services de Paiement, anciennement Stripe pour les cautions en cours de migration) : exécution des paiements, gestion des empreintes 3DS, des virements et de l'anti-fraude.
+- **Bridge** (Agrégateur agréé DSP2 par l'ACPR) : connexion bancaire et récupération des données nécessaires au scoring.
+- **Brevo** : envoi des e-mails transactionnels.
+- **PostHog** : mesure d'audience (données pseudonymisées).
+- **AWS S3** : stockage chiffré des justificatifs.
+- **Supabase** : hébergement de la base de données (Union européenne).
+- **Ionos** : hébergement du site et de l'application.
+- **Sociétés de recouvrement, huissiers de justice et avocats** : uniquement en cas d'impayé après l'activation de la garantie Gando (cf. §6).
+- **Autorités administratives et judiciaires** sur réquisition légale (Tracfin, autorités fiscales, tribunaux).
 
-Gando s’engage à étudier toute demande et à s’exécuter le cas échéant dans les délais stipulés par la réglementation applicable.
+Chaque sous-traitant agit sur la base d'un contrat conforme à l'article 28 du RGPD.
 
-Chaque Client peut introduire une réclamation auprès de l’autorité de contrôle compétente dans l’Etat membre dans lequel se trouve sa résidence habituelle, son lieu de travail ou le lieu où la violation aurait été commise, s’il considère que le traitement de données à caractère personnel le concernant constitue une violation de la règlementation applicable. En France (DROM COM inclus), l’Utilisateur peut adresser sa demande par voie électronique en cliquant sur le lien suivant : [https://www.cnil.fr/fr/plaintes/internet](https://www.cnil.fr/fr/plaintes/internet)
+---
 
-## Responsabilité
+## 5. Analyse de solvabilité via open banking et décision automatisée
 
-Dans le cadre de l’exécution des présentes Conditions Générales , la Société est tenue d’une obligation de moyens. La Société n’est responsable que du contenu qu’elle a elle-même édité. La Société ne saurait en aucun cas être responsable en cas de problème technique ou de défaillance du Site, ou pour tout dommage résultant de l’utilisation du Site.
+Cette section concerne les **clients finaux** uniquement.
 
-## Divulgation de violantions de sécurité des données
+### 5.1 En quoi consiste l'analyse
 
-Dans le cadre de l’exécution des présentes Conditions Générales , la Société est tenue d’une obligation de moyens. La Société n’est responsable que du contenu qu’elle a elle-même édité. La Société ne saurait en aucun cas être responsable en cas de problème technique ou de défaillance du Site, ou pour tout dommage résultant de l’utilisation du Site.
+Lorsque vous initiez une caution Gando, nous procédons à une **analyse automatisée de votre solvabilité** afin d'évaluer le risque de non-paiement en cas d'encaissement. Cette analyse permet de garantir la caution au loueur sans bloquer de fonds sur votre compte.
 
-## Politiques de confidentialité des tiers
+L'analyse repose sur les données suivantes, récupérées via **Bridge** (agréé DSP2 par l'ACPR) **après votre consentement explicite** :
 
-[**Politique de confidentialité de IONOS**](https://www.ionos.fr/terms-gtc/clause-de-confidentialite/)
+- Historique des transactions sur **les 90 derniers jours** maximum
+- Revenus récurrents et charges fixes
+- Solde moyen et incidents bancaires
+- Détection de signaux de fraude
 
-[Politique de confidentialité de STRIPE](https://stripe.com/fr/privacy)
+### 5.2 Logique du scoring
 
-[**Politique de confidentialité de PLACEKIT**](https://placekit.io/terms/privacy)
+Un algorithme propriétaire classe votre profil en **quatre niveaux** :
 
-## Consentement
+- **Faible** — caution acceptée sans condition
+- **Normal** — caution acceptée
+- **Sensible** — caution acceptée avec vigilance renforcée
+- **Élevé** — caution refusée
 
-ConsentementEn utilisant notre site web, vous acceptez par la présente notre politique de confidentialité et vous en acceptez les conditions.
+### 5.3 Vos droits (Article 22 RGPD)
 
-## Modifications de la politique de confidentialité
+Cette analyse est une **décision individuelle automatisée**. À ce titre, vous disposez des droits suivants :
 
-Gando se donne le droit de modifier cette politique de confidentialité à tout moment. Les modifications seront publiées sur notre site web et entreront en vigueur à la date de publication.
+- **Droit à une intervention humaine** : vous pouvez demander qu'un membre de l'équipe Gando réexamine votre dossier.
+- **Droit d'exprimer votre point de vue** et de fournir des éléments contextuels.
+- **Droit de contester la décision**.
 
-## Contact
+Pour exercer ces droits, écrivez à [dpo@gando.app](mailto:dpo@gando.app). Une réponse vous sera apportée sous **30 jours**.
 
-Nous prenons très au sérieux la protection des informations personnelles de nos utilisateurs et nous nous efforçons de mettre en place les mesures de sécurité les plus strictes pour les protéger.\
-<Tooltip>Contactez-nous</Tooltip> si vous avez des questions ou des préoccupations concernant notre politique de confidentialité.
+### 5.4 Conservation
+
+- Les **données bancaires brutes** issues de l'open banking sont supprimées **90 jours** après la décision de scoring.
+- Seul le **résultat agrégé** (niveau de risque, sans détail de transaction) est conservé 5 ans, pour preuve et conformément à nos obligations LCB-FT.
+
+---
+
+## 6. Recouvrement et avance Gando
+
+Cette section concerne les **clients finaux** dont la caution fait l'objet d'un encaissement par le loueur en cas de dommage.
+
+### 6.1 Phase 1 — Recouvrement amiable automatisé (12 jours)
+
+Lorsque le loueur initie un encaissement :
+
+- Une **première tentative de prélèvement** est effectuée immédiatement (J\+0), via l'empreinte 3DS collectée lors de la sécurisation (cette empreinte n'a jamais bloqué de fonds sur votre compte).
+- En cas d'échec, **deux nouvelles tentatives** ont lieu à **J\+6** et **J\+12**.
+
+**Base légale :** exécution du contrat (Art. 6.1.b RGPD).
+
+### 6.2 Phase 2 — Activation de la garantie Gando
+
+Si les tentatives de la phase 1 échouent, Gando peut avancer les fonds au loueur. Dans ce cas :
+
+- Une **mise en demeure** vous est adressée par e-mail, accompagnée d'un nouveau lien de paiement.
+- **Deux relances** supplémentaires sont envoyées à 7 jours d'intervalle.
+- Le loueur transmet à Gando les **justificatifs** du dommage (contrat, état des lieux, photos, devis).
+
+**Base légale :** intérêt légitime de Gando à recouvrer la créance après avance (Art. 6.1.f RGPD).
+
+### 6.3 Phase 3 — Recouvrement contentieux
+
+En cas d'échec persistant, votre dossier peut être transmis à :
+
+- Une **société de recouvrement**
+- Un **huissier de justice**
+- Un **avocat**
+- Les **autorités judiciaires compétentes**
+
+**Données transmises :** identité, coordonnées, montant dû, historique du litige, justificatifs transmis par le loueur.
+
+**Base légale :** intérêt légitime de Gando \+ obligation légale en cas de procédure judiciaire.
+
+### 6.4 Conservation des dossiers de recouvrement
+
+Les dossiers de recouvrement sont conservés **5 ans** après l'extinction de la créance ou la clôture du dossier judiciaire (délai de prescription civile, Art. 2224 du Code civil).
+
+---
+
+## 7. Transferts de données hors Union européenne
+
+La majorité de nos prestataires hébergent vos données dans l'Union européenne. Certains traitements impliquent toutefois un transfert hors UE :
+
+| Prestataire | Pays | Garanties |
+| :-- | :-- | :-- |
+| Stripe | États-Unis | Clauses contractuelles types (CCT) de la Commission européenne \+ Data Privacy Framework |
+| PostHog (option Cloud US) | États-Unis | CCT \+ pseudonymisation |
+
+Vous pouvez obtenir une copie de ces garanties en écrivant à [dpo@gando.app](mailto:dpo@gando.app).
+
+---
+
+## 8. Sécurité
+
+Nous mettons en œuvre des mesures techniques et organisationnelles adaptées au risque, notamment :
+
+- Chiffrement des données en transit (TLS 1.2\+) et au repos
+- Hachage des mots de passe (bcrypt)
+- Cloisonnement multi-tenant strict en base de données
+- Contrôle d'accès basé sur les rôles (RBAC) et journalisation des accès
+- Sauvegardes chiffrées
+- Tests de sécurité réguliers et politique de gestion des vulnérabilités
+
+En cas de **violation de données** susceptible d'engendrer un risque pour vos droits et libertés, nous notifions la CNIL dans les 72 heures et vous informons sans délai injustifié si le risque est élevé.
+
+---
+
+## 9. Vos droits
+
+Conformément au RGPD et à la loi Informatique et Libertés, vous disposez des droits suivants :
+
+- **Droit d'accès** à vos données
+- **Droit de rectification** des données inexactes
+- **Droit à l'effacement** (« droit à l'oubli »), sous réserve de nos obligations légales de conservation
+- **Droit à la limitation** du traitement
+- **Droit à la portabilité** de vos données
+- **Droit d'opposition** au traitement fondé sur l'intérêt légitime
+- **Droit de retirer votre consentement** à tout moment, pour les traitements qui en dépendent
+- **Droit de définir des directives** relatives au sort de vos données après votre décès
+- **Droits spécifiques en matière de décision automatisée** (cf. §5.3)
+
+### Comment exercer vos droits
+
+Écrivez à [dpo@gando.app](mailto:dpo@gando.app) en précisant votre demande. Nous pourrons vous demander une preuve d'identité en cas de doute raisonnable. Nous répondons dans un délai d'**un mois** (prorogeable de deux mois pour les demandes complexes).
+
+Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une **réclamation auprès de la CNIL** : [www.cnil.fr/fr/plaintes](https://www.cnil.fr/fr/plaintes).
+
+---
+
+## 10. Conservation des données après clôture du compte
+
+À la clôture de votre compte :
+
+- Les données de **facturation et de comptabilité** sont conservées 10 ans (obligation légale).
+- Les données relatives à la **LCB-FT** sont conservées 5 ans.
+- Les **dossiers de recouvrement actifs** sont conservés jusqu'à 5 ans après l'extinction de la créance.
+- Les autres données sont supprimées ou anonymisées dans un délai raisonnable.
+
+---
+
+## 11. Cookies et traceurs
+
+Nous utilisons des cookies pour :
+
+- **Cookies strictement nécessaires** au fonctionnement du service (authentification, sécurité) — pas de consentement requis.
+- **Cookies de mesure d'audience** (PostHog) — soumis à votre consentement, durée maximale **13 mois**.
+- **Cookies de personnalisation** — soumis à votre consentement.
+
+Vous pouvez gérer vos préférences à tout moment via le bandeau de consentement présent sur le site, ou en configurant votre navigateur.
+
+---
+
+## 12. Mineurs
+
+Nos services s'adressent exclusivement aux **personnes majeures** (18 ans révolus). Nous ne collectons pas sciemment de données concernant des mineurs. Si vous estimez qu'un mineur nous a transmis des données, contactez-nous immédiatement à [dpo@gando.app](mailto:dpo@gando.app).
+
+---
+
+## 13. Modifications de la présente politique
+
+Nous pouvons être amenés à modifier cette politique pour refléter une évolution réglementaire, un nouveau service ou un changement de prestataire.
+
+- Toute modification substantielle vous sera notifiée par e-mail et/ou via un bandeau dans l'application au moins **30 jours avant** son entrée en vigueur.
+- L'historique des versions est disponible sur demande à [dpo@gando.app](mailto:dpo@gando.app).
+
+---
+
+## 14. Contact
+
+| Sujet | Contact |
+| :-- | :-- |
+| Questions générales | [contact@gando.app](mailto:contact@gando.app) |
+| Données personnelles & exercice des droits | [dpo@gando.app](mailto:dpo@gando.app) |
+| Réclamation auprès de l'autorité de contrôle | [CNIL — www.cnil.fr](https://www.cnil.fr/fr/plaintes) |
+
+Adresse postale : 3 CHEMIN DE LA PORTE VERTE, 77144 MONTEVRAIN
