@@ -83,6 +83,13 @@
                   "guides/owner/account/info-account",             
                   "guides/owner/account/bank"
                 ]
+              },
+              {
+                "group": "Intégrations",
+                "icon": "puzzle-piece",
+                "pages": [
+                  "guides/owner/integrations/fleetee"
+                ]
               }
             ]
           },
