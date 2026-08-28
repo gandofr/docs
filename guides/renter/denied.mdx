@@ -1,35 +1,63 @@
 ---
-title: " Que faire en cas de refus ou de demande d’informations supplémentaires"
-description: "Il se peut que le scoring bancaire échoue. Il existe deux grands types de raisons à cela, qui vous seront notifiées par Bridge API"
-sidebarTitle: "Que faire en cas de refus"
+title: "Que faire si ma caution est refusée ?"
+description: "Résolvez les erreurs de connexion bancaire, demandes complémentaires ou refus de validation d’une caution Gando."
+sidebarTitle: "Refus ou erreur"
 ---
 
-## Erreurs, refus ou indisponibilités d’accès au compte
+Si votre caution ne peut pas être validée immédiatement, regardez d’abord **le message affiché à l’écran**. Dans la majorité des cas, il indique si le problème vient de la connexion bancaire ou de l’éligibilité du compte utilisé.
+
+## La connexion à ma banque ne fonctionne pas
 
 <AccordionGroup>
-  <Accordion title="Identifiants incorrects" description="Une erreur de saisie empêche la connexion à votre banque.">
-    Vérifiez vos identifiants et recommencez la connexion.
+  <Accordion title="Mes identifiants sont refusés">
+    Vérifiez que vous utilisez les identifiants habituels de votre banque et recommencez depuis le parcours Gando.
   </Accordion>
-  <Accordion title="Refus d’autorisation" description="Vous avez interrompu la procédure ou refusé le partage de vos données bancaires.">
-    Recommencez la procédure et assurez-vous de valider les conditions d'utilisation du service pour bénéficier de la caution sans blocage des fonds.
+
+  <Accordion title="Je n’ai pas terminé l’authentification">
+    Votre banque peut demander une validation dans son application, par SMS ou avec un autre dispositif de sécurité. Terminez cette étape puis revenez au parcours.
   </Accordion>
-  <Accordion title="Authentification incomplète" description="La validation par SMS, application mobile ou code de sécurité n’a pas été finalisée.">
-    Recommencez la procédure et assurez-vous de valider toutes les étapes de sécurité demandées par votre banque.
+
+  <Accordion title="J’ai refusé ou interrompu la connexion">
+    Relancez la connexion et validez les autorisations nécessaires si vous souhaitez bénéficier de la caution sans blocage.
   </Accordion>
-  <Accordion title="Indisponibilité de la banque" description="Votre banque peut être temporairement inaccessible pour des raisons techniques.">
-    Attendez quelques minutes et relancez la tentative si votre banque était indisponible.
+
+  <Accordion title="Ma banque est temporairement indisponible">
+    Réessayez plus tard. Une indisponibilité technique de la banque ou du service de connexion peut empêcher temporairement la vérification.
   </Accordion>
 </AccordionGroup>
 
-## Compte bancaire non éligible
+## La connexion fonctionne mais ma caution n’est pas acceptée
 
-<AccordionGroup>
-  <Accordion title="Certains types de comptes ne permettent pas de réaliser un scoring bancaire fiable" description="(ex. comptes épargne, comptes prépayés)">
-    Utiliser un autre compte bancaire éligible (compte courant principal, par exemple) et relancer la procédure.
-  </Accordion>
-  <Accordion title="Votre score bancaire est insuffisant." description="Différents paramètres peuvent en être la raison, par exemple s’il s'agit d’un compte mineur ou inactif. ">
-    Connecter un autre compte bancaire pour augmenter votre score et relancer la procédure.
-  </Accordion>
-</AccordionGroup>
+<Steps>
+  <Step title="Vérifiez le compte utilisé">
+    Privilégiez votre **compte courant principal**, suffisamment actif et représentatif de votre situation financière habituelle.
+  </Step>
+  <Step title="Essayez un autre compte si Gando vous le propose">
+    Un compte secondaire, très récent ou peu utilisé peut ne pas fournir suffisamment d’informations pour l’analyse.
+  </Step>
+  <Step title="Suivez l’alternative proposée par votre loueur">
+    Si la caution sans blocage ne peut pas être validée, le loueur peut vous proposer un autre mode de dépôt de garantie selon ses propres conditions.
+  </Step>
+</Steps>
 
-Si aucune de ces solutions ne fonctionne, si vous ne disposez pas d’un compte éligible, ou si vous ne souhaitez pas accepter les conditions d’utilisation du service [Bridge API](https://www.bridgeapi.io/), optez pour le dépôt de caution classique avec blocage de fonds proposé par le loueur.
+<Info>
+  Un refus sur une opération ne signifie pas que votre compte bancaire est bloqué ou qu’un paiement a été prélevé.
+</Info>
+
+## Besoin de comprendre pourquoi Gando analyse votre compte ?
+
+<CardGroup cols="2">
+  <Card title="Pourquoi connecter ma banque ?" icon="building-columns" href="/guides/renter/why-connect-my-bank-account">
+    Comprendre le rôle de la connexion bancaire.
+  </Card>
+
+  <Card title="Comprendre le scoring" icon="chart-line" href="/guides/renter/bank-score">
+    Comprendre comment le résultat d’éligibilité est utilisé.
+  </Card>
+</CardGroup>
+
+## Le problème persiste ?
+
+<Card title="Contacter l’assistance Gando" icon="headset" href="https://www.gando.app/demande-d-assistance">
+  Indiquez le message d’erreur affiché et, si possible, la référence de votre caution.
+</Card>
