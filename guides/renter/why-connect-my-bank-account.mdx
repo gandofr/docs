@@ -1,55 +1,62 @@
 ---
-title: "Pourquoi dois je connecter mon compte bancaire pour obtenir une caution"
-description: "Avant de valider votre caution, notre plateforme réalise un scoring bancaire pour vérifier votre capacité à honorer cet engagement."
+title: "Pourquoi connecter mon compte bancaire ?"
+description: "Comprenez pourquoi Gando utilise une connexion bancaire pour valider une caution sans blocage de fonds."
+sidebarTitle: "Connexion bancaire"
 ---
 
-### **Technologie**
+La connexion bancaire permet à Gando de vérifier votre **éligibilité à la caution sans blocage de fonds**.
 
-Gando utilise la technologie de l'**Open Banking**, également employée lors d'octroi de crédits instantanés, ou pour les solutions de paiements en plusieurs fois. 
+<Info>
+  Gando ne vous demande jamais de transmettre directement vos identifiants bancaires. La connexion se fait dans le parcours sécurisé de votre banque ou du prestataire Open Banking.
+</Info>
 
-- Votre banque est connectée de manière **chiffrée et temporaire **via notre prestataire **agréé par la Banque de France (ACPR)**, le tout dans un cadre strictement sécurisé. 
--  La connexion se fait via l'interface de votre banque avec vos identifiants habituels, et est **soumise au consentement explicite** de l’utilisateur.
-- La plateforme ne collecte **ni vos identifiants**, ni vos données personnelles.
-- Une fois l’analyse terminée, **l’accès expire automatiquement**.
+## Comment cela fonctionne ?
 
-### **Scoring**
+<Steps>
+  <Step title="Choisissez votre banque">
+    Depuis votre parcours de caution, cliquez sur **Ajouter une banque** puis sélectionnez votre établissement bancaire.
+  </Step>
+  <Step title="Authentifiez-vous auprès de votre banque">
+    Suivez les étapes de sécurité affichées par votre établissement bancaire et donnez votre consentement à la connexion.
+  </Step>
+  <Step title="Gando réalise l’analyse">
+    Les informations nécessaires sont utilisées pour réaliser une analyse ponctuelle d’éligibilité à la caution sans blocage.
+  </Step>
+  <Step title="Vous obtenez le résultat">
+    Si le parcours est validé, vous pouvez poursuivre l’activation de votre caution.
+  </Step>
+</Steps>
 
-En se basant sur ces données, notre algorithme effectue une **analyse ponctuelle et automatisée** de votre compte, qui permet d’évaluer votre stabilité financière.
+![Ajouter un compte bancaire dans le parcours Gando](/images/addbank.PNG)
 
-Ce scoring est indispensable pour garantir la fiabilité des cautions, la lutte contre les fraudes et la sécurité de tous les utilisateurs. Il nous aide à valider rapidement votre dossier, sans paperasse ni justificatifs manuels.
+## Pourquoi cette étape est nécessaire ?
 
-### **Quels comptes sont éligibles ?**
+Sans préautorisation bancaire bloquant le montant de la caution, Gando doit disposer d’un autre moyen d’évaluer la capacité du locataire à honorer son engagement.
 
-**Le scoring bancaire via Open Banking **peut être réalisé sur la grande majorité des **comptes courants personnels **détenus dans une **banque française ou européenne**. Cela inclut :
+La vérification bancaire permet donc de **remplacer une partie du mécanisme traditionnel de blocage de fonds par une analyse d’éligibilité**.
 
-- **Les comptes courants personnels** dans les grandes banques traditionnelles :\
-  BNP Paribas, Société Générale, Crédit Agricole, Banque Populaire, Caisse d’Épargne, LCL, etc.
-- **Les banques en ligne et néobanques** disposant d’un IBAN européen :\
-  Hello Bank!, Boursorama, Fortuneo, Revolut, N26, Orange Bank, Lydia, Bunq, etc.
-- **Les comptes dans des établissements de paiement agréés** compatibles Open Banking :\
-  Nickel, Qonto (pour les pros), Shine, etc.
+## Quelles informations sont utilisées ?
 
-### **Comptes avec un scoring moins favorable (ou refusés)**
+L’analyse peut tenir compte des informations bancaires nécessaires à l’évaluation du dossier, par exemple la situation du compte et son activité. L’objectif est uniquement de déterminer l’éligibilité au parcours proposé.
 
-Certains comptes sont **techniquement éligibles**, mais peuvent aboutir à un **scoring défavorable ou incomplet**, selon la nature ou l’usage du compte, par exemple :
+<Card title="Comprendre le scoring bancaire" icon="chart-line" href="/guides/renter/bank-score">
+  Découvrez plus précisément le rôle du scoring dans la validation de votre caution.
+</Card>
 
-- **Comptes secondaires peu actifs**\
-  → Peu de mouvements, pas de revenus réguliers, solde bas.
-- **Comptes d’épargne, comptes titres ou assurances-vie**\
-  → Ces comptes ne montrent pas la situation financière quotidienne, donc inutilisables pour l’analyse.
-- **Comptes professionnels (pour un scoring personnel)**\
-  → Les flux d’entreprise ne reflètent pas la situation du particulier cautionnaire.
-- **Comptes étrangers hors zone SEPA**\
-  → Les connexions Open Banking ne sont pas supportées ou partiellement compatibles.
-- **Comptes récents (moins de 3 mois d’historique)**\
-  → Données insuffisantes pour établir un profil fiable.
-- **Comptes avec incidents bancaires récents**\
-  → Découverts non autorisés, rejets de prélèvements ou chèques impayés : le score est souvent négatif.
+## Quel compte connecter ?
 
-### **Que faire en cas de scoring défavorable ?**
+Privilégiez votre **compte courant principal**, notamment celui sur lequel vous recevez habituellement vos revenus et réalisez vos dépenses courantes.
 
-Si votre compte ne vous permet pas d'être éligible à la caution sans blocage, nous vous conseillons de **connecter un autre compte plus représentatif** (ex. celui où sont versés vos revenus).
+Les comptes très récents, peu utilisés ou ne présentant pas suffisamment d’activité peuvent rendre l’analyse plus difficile.
 
-Si malgré tout vous ne parvenez pas à obtenir un score suffisant, demandez à votre loueur de procéder à la sécurisation de la caution de manière classique.
+## La connexion ne fonctionne pas ?
 
+<Card title="Résoudre un refus ou une erreur" icon="circle-exclamation" href="/guides/renter/denied">
+  Retrouvez les solutions selon le message affiché pendant votre parcours.
+</Card>
 
+## Vos données sont-elles sécurisées ?
+
+<Card title="Protection de vos données bancaires" icon="shield-halved" href="/security/dataprotection">
+  Découvrez comment la connexion bancaire et les données utilisées sont protégées.
+</Card>

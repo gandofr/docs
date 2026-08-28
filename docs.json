@@ -12,7 +12,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Informations",
+        "tab": "Comprendre Gando",
         "groups": [
           {
             "group": "Premiers pas",
@@ -36,7 +36,7 @@
             ]
           },
           {
-            "group": "Conditions et Confidentialié",
+            "group": "Conditions et confidentialité",
             "pages": [
               "terms-policy/cguv",
               "terms-policy/policy",
@@ -46,10 +46,10 @@
         ]
       },
       {
-        "tab": "Guides",
+        "tab": "Utiliser Gando",
         "groups": [
           {
-            "group": "Général",
+            "group": "Compte",
             "pages": [
               "guides/general/sign-up",
               "guides/general/forgotpassword",
@@ -57,7 +57,7 @@
             ]
           },
           {
-            "group": "Pour les propriétaires et gestionnaires",
+            "group": "Loueurs",
             "pages": [ 
               "guides/owner/products",
               "guides/owner/customers/informations",
@@ -87,7 +87,7 @@
             ]
           },
           {
-            "group": "Pour les locataires",
+            "group": "Locataires",
             "pages": [
               "guides/renter/request-deposit",
               "guides/renter/why-connect-my-bank-account",
