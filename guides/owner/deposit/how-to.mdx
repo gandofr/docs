@@ -1,87 +1,97 @@
 ---
-title: "Comment faire une caution sur Gando : Guide pas-à-pas"
-sidebarTitle: "Comment faire une caution sur Gando"
-description: "Avec la caution digitale Gando, la simplicité et l'efficacité opérationnelle vont de pair. Découvrez dans ce guide comment créer une caution pour un produit, envoyer un lien à vos clients et encaisser un remboursement si un dommage, des frais supplémentaires ou un manquement au contrat a été constaté."
+title: "Créer une caution avec Gando"
+sidebarTitle: "Créer une caution"
+description: "Créez une caution, envoyez-la au locataire et suivez son activation depuis votre espace Gando."
 ---
 
-<img
-  className="hidden dark:block"
-  src="/images/create-deposit.gif"
-  alt="Gando Dark"
-/>
+Créer une caution Gando prend quelques étapes. Le locataire reçoit ensuite un lien sécurisé pour réaliser son parcours de vérification et activer la caution **sans blocage du montant sur son compte**.
 
-![Ezgif Com Crop Gi](/images/ezgif.com-crop.gif)
+## Créer la caution
 
-## Comment ça marche
+<Steps>
+  <Step title="Ouvrez la section Cautions">
+    Depuis votre espace Gando, ouvrez **Cautions** puis cliquez sur **Ajouter une caution**.
+  </Step>
+  <Step title="Indiquez le montant">
+    Saisissez le montant de la caution prévu pour la location.
+  </Step>
+  <Step title="Associez le produit">
+    Sélectionnez le véhicule ou le produit concerné. S’il n’existe pas encore, créez-le d’abord dans votre catalogue.
+  </Step>
+  <Step title="Créez la caution">
+    Validez. La caution apparaît alors avec le statut **En attente**.
+  </Step>
+</Steps>
 
-Sécuriser une caution avec Gando signifie que vous demandez à votre client d’autoriser l’accès à certaines informations de son compte bancaire afin d’effectuer une analyse de sa situation financière via le scoring.
+![Créer une caution dans Gando](/images/Créerunecaution.gif)
 
-Cette démarche effectuée et le score de fiabilité validé par l’algorithme, le client règle les frais de sécurisation, ce qui permet d'enregistrer sa carte bancaire pour que les fonds puissent être prélevés ultérieurement en cas de besoin.
+<Tip>
+  Si vous devez d’abord créer un véhicule ou un produit, consultez [**Créer et gérer des produits**](/guides/owner/products).
+</Tip>
 
-Les frais liés à l’opération sont entièrement pris en charge par le client final qui garde ses fonds disponibles sur son compte, et aucun frais n’est appliqué au loueur pour sécuriser une caution. L’acceptation du règlement a valeur de signature de son **engagement contractuel**.
+## Envoyer la caution au locataire
 
-Le montant de vos cautions ne peut dépasser 2 500€ et leur temps de validité maximum est de 60 jours à compter de la date de paiement des frais par le locataire. Passé cette échéance, la caution sera automatiquement clôturée.
+Ouvrez la caution en attente. Vous pouvez ensuite choisir l’une des méthodes proposées dans votre espace Gando :
 
-En vous rendant dans la section **Cautions** dans la navigation principale, vous aurez la possibilité de créer et de gérer vos différentes cautions par statut, produit assigné et date d’encours.
+<CardGroup cols="3">
+  <Card title="Envoyer par e-mail" icon="envelope">
+    Saisissez l’adresse e-mail du locataire et envoyez directement le lien.
+  </Card>
 
-## Créer une caution
+  <Card title="Copier le lien" icon="link">
+    Copiez le lien sécurisé puis envoyez-le par SMS, WhatsApp ou votre messagerie habituelle.
+  </Card>
 
-1. Cliquez sur le bouton **Ajouter une caution**
-2. Entrez le montant de la caution
-3. Choisissez le produit auquel vous souhaitez assigner la caution (celui-ci doit avoir été créé au préalable dans la section **Catalogue produit**)
+  <Card title="Afficher le QR code" icon="qrcode">
+    En agence, le locataire peut scanner le QR code directement avec son téléphone.
+  </Card>
+</CardGroup>
 
-La caution nouvellement créée apparaîtra dans le dashboard avec le statut “En attente”.
+## Ce que fait ensuite le locataire
 
-![Créerunecaution Gi](/images/Créerunecaution.gif)
+<Steps>
+  <Step title="Il ouvre le lien Gando">
+    Le locataire accède à son parcours sécurisé depuis son téléphone ou son ordinateur.
+  </Step>
+  <Step title="Il renseigne ses informations">
+    Les informations nécessaires sont associées à la caution et à la location.
+  </Step>
+  <Step title="Il réalise la vérification bancaire">
+    Le locataire connecte son compte bancaire via le parcours Open Banking afin que Gando puisse vérifier son éligibilité.
+  </Step>
+  <Step title="Il finalise la caution">
+    Une fois le parcours accepté et les éventuels frais de sécurisation réglés, la caution devient active.
+  </Step>
+</Steps>
 
-## Envoyer un lien de caution
+<Card title="Voir le parcours côté locataire" icon="user" href="/guides/renter/request-deposit">
+  Cette page montre les étapes que suit votre client pour valider sa caution.
+</Card>
 
-Pour lancer le processus, il vous suffit d’envoyer un lien à votre client pour qu’il renseigne ses informations personnelles et bancaires.
+## Suivre le statut d’une caution
 
-Pour cela vous avez 3 possibilités :
+Depuis la liste des cautions, vous pouvez suivre son avancement.
 
-### Envoyer un lien par mail
+- **En attente** : le locataire n’a pas encore finalisé le parcours.
+- **En traitement** : la vérification est en cours.
+- **Incomplet** : une étape ou une information doit encore être complétée.
+- **Actif** : la caution est validée et en cours.
+- **Clôturé** : la caution est terminée sans encaissement.
+- **Capturé** : tout ou partie de la caution a été encaissé.
+- **Échec de paiement** : la demande d’encaissement n’a pas abouti immédiatement.
 
-1. Cliquez sur une caution avec le statut « En attente »
-2. Cliquez sur le bouton **Envoyer par mail**
-3. Entrez l’adresse mail de votre client
-4. Cliquez sur \*\*Envoyer \*\*
+<Note>
+  Les statuts visibles peuvent évoluer selon les étapes du parcours et les fonctionnalités activées sur votre compte.
+</Note>
 
-### Copier le lien
+## En fin de location
 
-1. Cliquez sur une caution avec le statut « En attente »
-2. Cliquez sur le bouton **Copier le lien**
-3. Vous pouvez coller ce lien dans votre application de messagerie ou tout autre fil de discussion avec votre client
+<CardGroup cols="2">
+  <Card title="Aucun incident" icon="circle-check" href="/guides/owner/deposit/close">
+    Clôturez la caution lorsque la location est terminée et qu’aucun montant ne doit être encaissé.
+  </Card>
 
-### Présenter un QR code
-
-Cette fonctionnalité est recommandée lorsque vous êtes en présentiel avec votre client et sur votre interface mobile.
-
-1. Cliquez sur une caution avec le statut « En attente »
-2. Cliquez sur le bouton **Partager avec le QR code**
-3. Faîtes scanner le QR code par votre client avec son téléphone mobile
-
-## Suivi de l’activité
-
-Dans le dashboard de caution, vous pouvez consulter l’historique et gérer l’activité de vos cautions. Vous y trouverez les informations suivantes :
-
-- **Statut de la caution** : Indique l’activité de la caution.
-- **Produit** auquel est assigné la caution
-- **Date d’encours** : Indique la **date de début** et **d’expiration** de la caution.
-- **Référence** : Un code de référence est automatiquement attribué à chaque caution créée.
-- **Montant de la caution**
-- **Détails du client** ayant accepté la caution (nom, e-mail, adresse…)
-- **Détails de l’encaissement** (montants, frais pour encaissement…)
-- **Moyen de paiement** enregistré par le client (type de carte, pays)
-
-## Statuts
-
-Il existe 8 formes de statuts pour les cautions :
-
-- **En attente** : Aucune sécurisation n’a encore été réalisée.
-- **Actif** : La caution est en cours de validité.
-- **En traitement** : L’opération de scoring a été acceptée par le client et est en cours de traitement.
-- **Incomplet** : Il manque des informations pour que l’opération de scoring soit complète.
-- **Clôturé** : La caution a été clôturée sans incident ou n’est plus valide.
-- **Capturé** : La caution a été encaissée.
-- **Échec de paiement** : La capture de la caution a échoué.
+  <Card title="Dommage ou frais à encaisser" icon="money-bill-transfer" href="/guides/owner/deposit/capture">
+    Demandez l’encaissement de tout ou partie de la caution lorsque cela est prévu par votre contrat avec le locataire.
+  </Card>
+</CardGroup>
