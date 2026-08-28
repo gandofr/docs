@@ -1,40 +1,58 @@
 ---
-title: "Comment déposer une caution avec Gando"
-description: "Déposer une caution avec Gando est simple, rapide et entièrement sécurisé. "
+title: "Valider une caution Gando"
+description: "Suivez les étapes pour valider votre caution Gando sans bloquer le montant de la caution sur votre compte."
+sidebarTitle: "Valider une caution"
 ---
 
-Le parcours se déroule en 5 étapes :
+Votre loueur vous a envoyé une caution Gando. Le parcours se fait en ligne et permet, lorsqu’il est accepté, de **sécuriser la caution sans bloquer son montant sur votre compte bancaire**.
 
-## 1. Recevez le lien de caution pour accéder à l’espace sécurisé de Gando
+## Les étapes
 
-Pour enregistrer votre caution, votre loueur peut utiliser l’une de ces 3 méthodes :
+<Steps>
+  <Step title="1. Ouvrez le lien envoyé par votre loueur">
+    Vous pouvez recevoir le lien par e-mail, SMS, messagerie ou en scannant un QR code présenté en agence.
+  </Step>
+  <Step title="2. Renseignez vos informations">
+    Complétez les informations demandées afin d’associer correctement la caution à votre location.
+  </Step>
+  <Step title="3. Connectez votre compte bancaire">
+    Cliquez sur **Ajouter une banque**, choisissez votre banque puis suivez le parcours sécurisé affiché à l’écran.
+  </Step>
+  <Step title="4. Gando vérifie votre éligibilité">
+    Gando utilise les informations nécessaires issues de la connexion Open Banking pour réaliser une analyse d’éligibilité à la caution sans blocage.
+  </Step>
+  <Step title="5. Finalisez la caution">
+    Si votre dossier est accepté, suivez la dernière étape affichée par Gando, notamment le règlement des éventuels frais de sécurisation. La caution devient ensuite active.
+  </Step>
+</Steps>
 
-### Par mail
+<Info>
+  **Le montant de la caution n’est pas prélevé ni bloqué lors de son activation.** En cas de dommage ou de frais prévus au contrat de location, le loueur peut ensuite demander l’encaissement de tout ou partie de la caution.
+</Info>
 
-Vous recevez un lien de caution dans votre boîte mail. Cliquez sur le lien pour être redirigé vers l’espace sécurisé de Gando, accessible sur ordinateur ou mobile.
+## Pourquoi connecter mon compte bancaire ?
 
-### Avec un QR code
+Cette connexion permet à Gando de vérifier votre éligibilité à la caution sans blocage. Elle s’effectue via un parcours Open Banking sécurisé et nécessite votre consentement.
 
-Votre loueur vous présente un QR code à scanner avec votre smartphone, qui ouvre l’espace sécurisé de Gando.
+<Card title="Comprendre la connexion bancaire" icon="building-columns" href="/guides/renter/why-connect-my-bank-account">
+  Découvrez pourquoi cette étape est nécessaire et comment vos informations sont utilisées.
+</Card>
 
-### Depuis un lien
+## Si la vérification ne fonctionne pas
 
-Votre loueur vous envoie un lien sécurisé dans votre application de messagerie ou tout autre fil de discussion.
+Selon le résultat ou les informations disponibles, Gando peut vous demander de compléter votre parcours ou utiliser un autre compte bancaire plus représentatif.
 
-## 2. Renseignez vos informations
+<Card title="Que faire en cas de refus ?" icon="circle-exclamation" href="/guides/renter/denied">
+  Consultez les solutions possibles si votre caution ne peut pas être validée immédiatement.
+</Card>
 
-Saisissez les informations demandées (identité, coordonnées) afin de rattacher correctement la caution à votre contrat de location.
+## Une fois la caution active
 
-## 3. Connectez votre compte bancaire
+Vous n’avez plus rien à faire pendant la location. À la fin :
 
-Cliquez sur le bouton **« Ajouter une banque »** pour autoriser Gando à lancer une vérification de votre compte bancaire via Bridge API, service conforme à la réglementation PSD2. Vous pouvez connecter plusieurs comptes bancaires.
+- si aucun montant n’est dû, le loueur clôture la caution ;
+- si des frais ou dommages sont constatés conformément au contrat, le loueur peut demander un encaissement.
 
-## 4. Scoring bancaire via Bridge API
-
-- **Choisissez votre banque parmi la liste** pour être redirigé vers l’interface numérique de votre établissement bancaire.
-- **Utilisez vos identifiants habituels de connexion** pour accéder à votre compte bancaire, et validez les conditions d’utilisation du service Bridge API.
-- Bridge API synchronise les données nécessaires pour évaluer votre solvabilité (transactions, historique bancaire) afin de produire un scoring en temps réel.
-
-## 5. Confirmation de la caution
-
-Dès que la vérification (scoring) est validée, il vous sera demandé de régler des frais de sécurisation avec la carte bancaire affiliée au compte connecté dans l’espace sécurisé. Confirmez le paiement pour finaliser l’opération.
+<Note>
+  Une question sur la sécurité de vos données ? Consultez [**Protection de vos données bancaires**](/security/dataprotection).
+</Note>

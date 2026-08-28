@@ -1,43 +1,74 @@
 ---
-title: "Bienvenue sur le centre d’aide de Gando"
-description: "Essayez et explorez les fonctionnalités et outils de Gando."
-sidebarTitle: "Introduction à Gando"
-icon: "building"
+title: "Centre d’aide Gando"
+description: "Toutes les réponses pour créer, sécuriser, suivre et encaisser une caution avec Gando."
+sidebarTitle: "Accueil"
+icon: "house"
 ---
 
 <img
   className="block dark:hidden"
+  alt="Gando"
   src="/images/gando-light.svg"
-  alt="Gando Light"
 />
-
 <img
   className="hidden dark:block"
+  alt="Gando"
   src="/images/gando-dark.svg"
-  alt="Gando Dark"
 />
 
-## Comment pouvons-nous vous aider ?
+# Comment pouvons-nous vous aider ?
 
-Ici, vous trouverez toutes les réponses essentielles pour utiliser Gando.
+Gando permet de gérer une **caution en ligne sans bloquer les fonds du locataire**, tout en donnant au loueur un parcours de sécurisation et d’encaissement en cas de besoin.
 
 <CardGroup cols="2">
-  <Card title="Comment ça fonctionne ?" icon="aperture" href="https://gando.mintlify.app/howtomake">
-    Tout ce qu’il faut pour bien commencer
+  <Card title="Je suis loueur" icon="car" href="/guides/owner/deposit/how-to">
+    Créer une caution, envoyer le lien au client, suivre son statut et l’encaisser si nécessaire.
   </Card>
-  <Card title="Preview Changes" icon="square-user" href="https://mintlify.com/docs/development">
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-  <Card title="Customize Style" icon="palette" href="https://mintlify.com/docs/settings/global">
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card title="Reference APIs" icon="code" href="https://mintlify.com/docs/api-playground/openapi">
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card title="Add Components" icon="screwdriver-wrench" href="https://mintlify.com/docs/content/components/accordions">
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card title="Get Inspiration" icon="stars" href="https://mintlify.com/customers">
-    Check out our showcase of our favorite documentation
+
+  <Card title="Je suis locataire" icon="user" href="/guides/renter/request-deposit">
+    Comprendre la caution Gando, réaliser la vérification bancaire et finaliser votre caution.
   </Card>
 </CardGroup>
+
+## Les actions les plus fréquentes
+
+<CardGroup cols="2">
+  <Card title="Créer une caution" icon="plus" href="/guides/owner/deposit/how-to">
+    Le parcours complet côté loueur, étape par étape.
+  </Card>
+
+  <Card title="Encaisser une caution" icon="money-bill-transfer" href="/guides/owner/deposit/capture">
+    Que faire lorsqu’un dommage ou des frais doivent être prélevés.
+  </Card>
+
+  <Card title="Pourquoi connecter mon compte bancaire ?" icon="building-columns" href="/guides/renter/why-connect-my-bank-account">
+    Comprendre l’Open Banking et la vérification utilisée par Gando.
+  </Card>
+
+  <Card title="Que faire en cas de refus ?" icon="circle-exclamation" href="/guides/renter/denied">
+    Les solutions si la vérification bancaire ne peut pas être validée.
+  </Card>
+</CardGroup>
+
+## Comprendre Gando en 2 minutes
+
+<Steps>
+  <Step title="Le loueur crée une caution">
+    Il indique le montant et partage un lien ou un QR code avec son client.
+  </Step>
+  <Step title="Le locataire réalise la vérification">
+    Il renseigne ses informations, connecte son compte bancaire de façon sécurisée et suit les étapes affichées par Gando.
+  </Step>
+  <Step title="La caution devient active">
+    Une fois le parcours validé, aucun montant de caution n’est bloqué sur le compte du locataire.
+  </Step>
+  <Step title="Le loueur clôture ou encaisse">
+    Si tout se passe bien, la caution est clôturée. En cas de dommage ou de frais prévus au contrat, le loueur peut demander l’encaissement de tout ou partie du montant.
+  </Step>
+</Steps>
+
+<Note>
+  Vous cherchez simplement à comprendre le principe ? Consultez [**Comment fonctionne Gando ?**](/howtomake).
+</Note>
+
+Besoin d’aide supplémentaire ? [Contactez l’assistance Gando](https://www.gando.app/demande-d-assistance).
