@@ -1,39 +1,51 @@
 ---
-title: "Comprendre votre scoring bancaire"
-description: "Lors de votre réservation avec caution digitale sans blocage, votre profil est évalué grâce à un scoring bancaire en temps réel. Cette étape permet de garantir au loueur que vous êtes en mesure d’assumer la caution si un litige survient, sans qu’aucun fonds ne soit bloqué sur votre compte."
+title: "Comprendre le scoring bancaire"
+description: "Comprenez à quoi sert le scoring bancaire et comment il permet d’évaluer l’éligibilité à une caution sans blocage."
+sidebarTitle: "Scoring bancaire"
 ---
 
-### **Qu’est-ce que le scoring bancaire ?**
+Le scoring bancaire est une **analyse automatisée d’éligibilité** utilisée pour déterminer si votre caution peut être activée sans bloquer son montant sur votre compte.
 
-Le scoring bancaire est une analyse automatique de votre situation financière, réalisée à partir de données fournies par votre banque. C’est un processus **rapide, sécurisé et conforme à la réglementation européenne (DSP2)**.
+## À quoi sert le scoring ?
 
-Il ne s’agit pas d’un accès complet à vos comptes, mais d’une vérification ponctuelle et limitée qui évalue votre **capacité à honorer un engagement de caution**.
+Avec une caution classique, le loueur bloque généralement une somme sur votre carte bancaire. Gando fonctionne différemment : le montant n’est pas immobilisé lors de l’activation.
 
-### **Comment cela fonctionne ?**
+Le scoring aide donc Gando à évaluer si votre dossier est compatible avec ce parcours.
 
-Une fois votre accord donné, le système interroge votre banque de manière sécurisée via l’**open banking**. Les informations nécessaires (solde, régularité des revenus, dépenses principales, incidents de paiements éventuels…) sont utilisées pour attribuer un score. Ce score permet au loueur de savoir si la caution peut être validée sans bloquer d’argent sur votre carte.
+## Comment se déroule l’analyse ?
 
-### **Confidentialité et sécurité**
+<Steps>
+  <Step title="Vous connectez votre banque">
+    La connexion s’effectue via un parcours Open Banking sécurisé et avec votre consentement.
+  </Step>
+  <Step title="Les informations nécessaires sont analysées">
+    Gando utilise uniquement les informations utiles à l’évaluation de votre éligibilité.
+  </Step>
+  <Step title="Un résultat est produit">
+    Le résultat détermine si vous pouvez poursuivre la caution sans blocage ou si une autre action est nécessaire.
+  </Step>
+</Steps>
 
-- Les données sont transmises via des canaux **chiffrés de bout en bout**.
-- L’accès est limité dans le temps et expire automatiquement après l’analyse.
-- Gando ne conserve en aucun cas (jamais) vos identifiants bancaires.
-- Vous gardez le contrôle total de vos informations : aucune donnée n’est utilisée à d’autres fins que la validation de la caution. Aucune donnée superflue (par ex. intitulé des dépenses personnelles) n’est exploitée.
+## Quels éléments peuvent influencer le résultat ?
 
-### **Pourquoi est-ce important ?**
+L’analyse peut notamment tenir compte de la situation et de l’activité du compte connecté. Un compte principal, suffisamment ancien et régulièrement utilisé donne généralement davantage d’informations qu’un compte secondaire ou très récent.
 
-Le scoring protège les deux parties :
+<Info>
+  Le résultat du scoring ne constitue pas un jugement sur votre situation personnelle. Il sert uniquement à déterminer l’éligibilité au mécanisme de caution proposé pour cette opération.
+</Info>
 
-- **Pour vous** : il évite tout blocage de fonds et rend votre expérience de location plus fluide.
-- **Pour le loueur** : il garantit que la caution est fiable et qu’il peut louer en toute confiance.
+## Que voit le loueur ?
 
-### **Que faire si votre scoring échoue ?**
+Le loueur suit le **statut de la caution** nécessaire à sa gestion. Vos identifiants bancaires ne lui sont pas transmis.
 
-Dans certains cas (solde insuffisant, revenus irréguliers, incident bancaire récent), le scoring peut être défavorable. Vous aurez alors deux options :
+## Que faire si le scoring ne permet pas de continuer ?
 
-- Proposer une autre carte ou un autre compte pour réessayer.
-- Passer par la caution classique avec blocage de fonds, si le loueur l’accepte.
+<Card title="Résoudre un refus ou une demande complémentaire" icon="circle-exclamation" href="/guides/renter/denied">
+  Vérifiez les causes les plus fréquentes et les solutions possibles.
+</Card>
 
-### **À retenir**
+## Vous voulez comprendre la connexion bancaire ?
 
-Le scoring bancaire n’est pas un jugement de valeur, mais un outil de sécurité. Il permet de remplacer le blocage traditionnel par une garantie plus moderne et plus équitable. Grâce à lui, vous conservez la liberté de vos fonds tout en rassurant votre loueur.
+<Card title="Pourquoi connecter mon compte bancaire ?" icon="building-columns" href="/guides/renter/why-connect-my-bank-account">
+  Retrouvez le parcours étape par étape et les informations sur la connexion bancaire.
+</Card>
