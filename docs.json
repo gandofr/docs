@@ -46,6 +46,26 @@
         ]
       },
       {
+        "tab": "Support",
+        "groups": [
+          {
+            "group": "Aide",
+            "icon": "life-ring",
+            "pages": [
+              "support/faq",
+              "support/common-issues",
+              "support/contact"
+            ]
+          },
+          {
+            "group": "Litiges",
+            "pages": [
+              "guides/dispute"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Utiliser Gando",
         "groups": [
           {
@@ -109,12 +129,6 @@
               "guides/renter/denied",
               "guides/renter/bank-score",
               "guides/renter/payment-methods"
-            ]
-          },
-          {
-            "group": "Litiges",
-            "pages": [
-              "guides/dispute"
             ]
           }
         ]
