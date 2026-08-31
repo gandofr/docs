@@ -53,7 +53,8 @@
             "icon": "life-ring",
             "pages": [
               "support/faq",
-              "support/common-issues"
+              "support/common-issues",
+              "support/contact"
             ]
           }
         ]
