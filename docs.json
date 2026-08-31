@@ -91,6 +91,13 @@
                 "pages": [
                   "guides/owner/integrations/fleetee"
                 ]
+              },
+              {
+                "group": "Développeurs",
+                "icon": "terminal",
+                "pages": [
+                  "guides/owner/developer/api-key"
+                ]
               }
             ]
           },
