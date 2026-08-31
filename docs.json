@@ -46,6 +46,19 @@
         ]
       },
       {
+        "tab": "Support",
+        "groups": [
+          {
+            "group": "Aide",
+            "icon": "life-ring",
+            "pages": [
+              "support/faq",
+              "support/common-issues"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Utiliser Gando",
         "groups": [
           {
