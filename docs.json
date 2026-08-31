@@ -56,6 +56,12 @@
               "support/common-issues",
               "support/contact"
             ]
+          },
+          {
+            "group": "Litiges",
+            "pages": [
+              "guides/dispute"
+            ]
           }
         ]
       },
@@ -123,12 +129,6 @@
               "guides/renter/denied",
               "guides/renter/bank-score",
               "guides/renter/payment-methods"
-            ]
-          },
-          {
-            "group": "Litiges",
-            "pages": [
-              "guides/dispute"
             ]
           }
         ]
