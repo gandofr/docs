@@ -42,14 +42,9 @@
               "terms-policy/policy",
               "terms-policy/cookie"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Support",
-        "groups": [
+          },
           {
-            "group": "Aide",
+            "group": "Support",
             "icon": "life-ring",
             "pages": [
               "support/faq",
